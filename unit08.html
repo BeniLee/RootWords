@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元八：【推】-pel-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; line-height: 1.8; }
+        .speakable { cursor: pointer; transition: all 0.2s ease-in-out; position: relative; }
+        .speakable:hover { background-color: #e0f2fe; border-radius: 0.375rem; transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .speakable::after { content: '🔊'; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); opacity: 0; transition: opacity 0.2s; }
+        .speakable:hover::after { opacity: 1; }
+        .input-box { border: 2px solid #d1d5db; border-radius: 0.375rem; padding: 0.2rem 0.5rem; width: 140px; text-align: center; outline: none; transition: border-color 0.2s; font-weight: 600; color: #1f2937; }
+        .input-box:focus { border-color: #3b82f6; background-color: #f0f9ff; }
+        .correct { border-color: #10b981 !important; background-color: #d1fae5 !important; color: #065f46; }
+        .incorrect { border-color: #ef4444 !important; background-color: #fee2e2 !important; color: #991b1b; }
+        .blank-wrapper { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; margin: 0 0.3rem; margin-bottom: 0.5rem; }
+        .blank-hint { font-size: 0.75rem; color: #4b5563; font-weight: bold; margin-bottom: 0.1rem; }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元八：【推】 -pel-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到單字或例句上點擊，就可以聽發音喔！</p>
+        </div>
+        <div class="p-6 md:p-8">
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center"><span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('expel')"><span class="text-2xl font-bold text-blue-700">expel</span><span class="text-gray-500 ml-2">(v.) 驅逐、開除</span></div><div class="speakable p-2 -mx-2" onclick="speak('The school will expel the student.')"><p class="text-gray-700 font-medium">The school will <span class="text-blue-600 font-bold">expel</span> the student.</p><p class="text-gray-500 text-sm mt-1">學校將開除那名學生。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('propel')"><span class="text-2xl font-bold text-blue-700">propel</span><span class="text-gray-500 ml-2">(v.) 推進、驅動</span></div><div class="speakable p-2 -mx-2" onclick="speak('Waves propel the boat.')"><p class="text-gray-700 font-medium">Waves <span class="text-blue-600 font-bold">propel</span> the boat.</p><p class="text-gray-500 text-sm mt-1">波浪推動船隻。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('repel')"><span class="text-2xl font-bold text-blue-700">repel</span><span class="text-gray-500 ml-2">(v.) 擊退、排斥</span></div><div class="speakable p-2 -mx-2" onclick="speak('The shield can repel arrows.')"><p class="text-gray-700 font-medium">The shield can <span class="text-blue-600 font-bold">repel</span> arrows.</p><p class="text-gray-500 text-sm mt-1">這盾牌能擊退箭矢。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('impulse')"><span class="text-2xl font-bold text-blue-700">impulse</span><span class="text-gray-500 ml-2">(n.) 衝動、衝力</span></div><div class="speakable p-2 -mx-2" onclick="speak('He bought it on impulse.')"><p class="text-gray-700 font-medium">He bought it on <span class="text-blue-600 font-bold">impulse</span>.</p><p class="text-gray-500 text-sm mt-1">他一時衝動買了它。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('compel')"><span class="text-2xl font-bold text-blue-700">compel</span><span class="text-gray-500 ml-2">(v.) 迫使、強制</span></div><div class="speakable p-2 -mx-2" onclick="speak('The law will compel action.')"><p class="text-gray-700 font-medium">The law will <span class="text-blue-600 font-bold">compel</span> action.</p><p class="text-gray-500 text-sm mt-1">法律會迫使行動。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('compulsory')"><span class="text-2xl font-bold text-blue-700">compulsory</span><span class="text-gray-500 ml-2">(adj.) 強制的</span></div><div class="speakable p-2 -mx-2" onclick="speak('Education is compulsory here.')"><p class="text-gray-700 font-medium">Education is <span class="text-blue-600 font-bold">compulsory</span> here.</p><p class="text-gray-500 text-sm mt-1">這裡教育是義務的。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('deport')"><span class="text-2xl font-bold text-blue-700">deport</span><span class="text-gray-500 ml-2">(v.) 驅逐出境</span></div><div class="speakable p-2 -mx-2" onclick="speak('They deported the criminal.')"><p class="text-gray-700 font-medium">They <span class="text-blue-600 font-bold">deported</span> the criminal.</p><p class="text-gray-500 text-sm mt-1">他們將罪犯驅逐出境。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('portable')"><span class="text-2xl font-bold text-blue-700">portable</span><span class="text-gray-500 ml-2">(adj.) 可攜帶的</span></div><div class="speakable p-2 -mx-2" onclick="speak('This fan is portable.')"><p class="text-gray-700 font-medium">This fan is <span class="text-blue-600 font-bold">portable</span>.</p><p class="text-gray-500 text-sm mt-1">這個風扇是可攜式的。</p></div></div>
+                </div>
+            </section>
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center"><span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰</h3>
+                <p class="mb-6 text-gray-700 font-medium">請閱讀短文，依提示填寫單字。</p>
+                <div class="text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    The teacher will 
+                    <span class="blank-wrapper"><span class="blank-hint">1. 驅逐</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
+                    the noisy student. The ship will 
+                    <span class="blank-wrapper"><span class="blank-hint">2. 推進</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
+                    forward. The strong wall can 
+                    <span class="blank-wrapper"><span class="blank-hint">3. 擊退</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
+                    enemies. He made an 
+                    <span class="blank-wrapper"><span class="blank-hint">4. 衝動</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
+                    purchase. The rule will 
+                    <span class="blank-wrapper"><span class="blank-hint">5. 迫使</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
+                    compliance. Wearing a helmet is 
+                    <span class="blank-wrapper"><span class="blank-hint">6. 強制的</span><input type="text" id="q6" class="input-box" autocomplete="off"></span>
+                    .
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">👑 魔王加分題 (Bonus Words)</h3>
+                <p class="text-sm text-gray-600 mb-4">還有這些相關單字，點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('compulsion')"><p class="font-bold text-orange-600">compulsion</p><p class="text-xs text-gray-500">強迫、衝動</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('expulsion')"><p class="font-bold text-orange-600">expulsion</p><p class="text-xs text-gray-500">開除、驅逐</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('impulsive')"><p class="font-bold text-orange-600">impulsive</p><p class="text-xs text-gray-500">衝動的</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('port')"><p class="font-bold text-orange-600">port</p><p class="text-xs text-gray-500">港口</p></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        function speak(text) { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const msg = new SpeechSynthesisUtterance(); msg.text = text; msg.lang = 'en-US'; msg.rate = 0.9; window.speechSynthesis.speak(msg); } else { alert("瀏覽器不支援語音發音功能。"); } }
+        const answers = { q1: "expel", q2: "propel", q3: "repel", q4: "impulse", q5: "compel", q6: "compulsory" };
+        function checkAnswers() { let correctCount = 0; const totalQuestions = Object.keys(answers).length; for (let id in answers) { const inputElement = document.getElementById(id); const userAnswer = inputElement.value.trim().toLowerCase(); inputElement.classList.remove('correct', 'incorrect'); if (userAnswer === answers[id]) { inputElement.classList.add('correct'); correctCount++; } else { if (userAnswer !== "") inputElement.classList.add('incorrect'); } } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600'); if (correctCount === totalQuestions) { resultMsg.innerText = "🎉 太棒了！全部答對！"; resultMsg.classList.add('text-green-600'); } else { resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！`; resultMsg.classList.add('text-red-600'); } }
+        function showAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = answers[id]; inputElement.classList.remove('incorrect'); inputElement.classList.add('correct'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-red-600'); resultMsg.classList.add('text-green-600'); resultMsg.innerText = "✨ 已經為您顯示正確答案。"; }
+        function clearAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = ""; inputElement.classList.remove('correct', 'incorrect'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.add('hidden'); }
+    </script>
+</body>
+</html>
