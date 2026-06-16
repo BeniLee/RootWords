@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #1e3a5f;
@@ -19,8 +18,6 @@
             flex-direction: column;
             overflow: hidden;
         }
-
-        /* 導航列：60px */
         nav {
             height: 60px;
             background-color: #1e3a5f;
@@ -32,7 +29,6 @@
             z-index: 10;
             flex-shrink: 0;
         }
-
         .nav-title {
             color: #ffffff;
             font-size: 1.25rem;
@@ -40,20 +36,17 @@
             letter-spacing: 0.5px;
             white-space: nowrap;
         }
-
         .nav-controls {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .nav-controls label {
             color: #e2e8f0;
             font-size: 0.9rem;
             font-weight: 500;
             white-space: nowrap;
         }
-
         .nav-controls select {
             padding: 6px 28px 6px 10px;
             font-size: 0.9rem;
@@ -66,7 +59,6 @@
             appearance: auto;
             min-width: 130px;
         }
-
         .nav-controls button {
             padding: 6px 18px;
             font-size: 0.9rem;
@@ -79,12 +71,28 @@
             transition: background-color 0.2s;
             white-space: nowrap;
         }
-
         .nav-controls button:hover {
             background-color: #2563eb;
         }
-
-        /* iframe 佔據剩餘空間 */
+        .version-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 999px;
+            padding: 3px 12px;
+        }
+        .version-toggle label {
+            font-size: 0.82rem;
+            cursor: pointer;
+            user-select: none;
+        }
+        .version-toggle input[type="checkbox"] {
+            accent-color: #10b981;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
         iframe {
             flex: 1;
             width: 100%;
@@ -99,7 +107,7 @@
         <div class="nav-controls">
             <label for="unit-select">選擇單元：</label>
             <select id="unit-select">
-                <option value="unit01.html">單元 01</option>
+                <option value="unit01.html" selected>單元 01</option>
                 <option value="unit02.html">單元 02</option>
                 <option value="unit03.html">單元 03</option>
                 <option value="unit04.html">單元 04</option>
@@ -148,7 +156,7 @@
                 <option value="unit47.html">單元 47</option>
                 <option value="unit48.html">單元 48</option>
                 <option value="unit49.html">單元 49</option>
-                <option value="unit50.html" selected>單元 50</option>
+                <option value="unit50.html">單元 50</option>
             </select>
 
             <button onclick="prevUnit()">⬅ 上一個</button>
@@ -156,6 +164,11 @@
 
             <input type="number" id="unit-input" min="1" max="50" placeholder="單元號" style="width:70px;padding:6px 8px;font-size:0.9rem;border-radius:6px;border:1px solid #93c5fd;">
             <button onclick="jumpToNumber()">跳到</button>
+
+            <div class="version-toggle">
+                <input type="checkbox" id="v2-toggle" title="切換整合版 v2（含 YouTube 連結）">
+                <label for="v2-toggle">整合版</label>
+            </div>
         </div>
     </nav>
 
@@ -164,16 +177,40 @@
     <script>
         const select = document.getElementById('unit-select');
         const iframe = document.getElementById('content-frame');
+        const v2Toggle = document.getElementById('v2-toggle');
+
+        // Restore v2 preference
+        (function() {
+            const v = localStorage.getItem('rootwords-v2');
+            if (v === '1') {
+                v2Toggle.checked = true;
+                applySrc();
+            }
+        })();
+
+        v2Toggle.addEventListener('change', function () {
+            localStorage.setItem('rootwords-v2', this.checked ? '1' : '0');
+            applySrc();
+        });
+
+        function getFile() {
+            const base = select.value;
+            return v2Toggle.checked ? base.replace('.html', '-v2.html') : base;
+        }
+
+        function applySrc() {
+            iframe.src = getFile();
+        }
 
         select.addEventListener('change', function () {
-            iframe.src = this.value;
+            applySrc();
         });
 
         function prevUnit() {
             const idx = select.selectedIndex;
             if (idx > 0) {
                 select.selectedIndex = idx - 1;
-                iframe.src = select.value;
+                applySrc();
             }
         }
 
@@ -181,7 +218,7 @@
             const idx = select.selectedIndex;
             if (idx < select.options.length - 1) {
                 select.selectedIndex = idx + 1;
-                iframe.src = select.value;
+                applySrc();
             }
         }
 
@@ -189,15 +226,15 @@
             const input = document.getElementById('unit-input');
             const num = parseInt(input.value, 10);
             if (!Number.isNaN(num) && num >= 1 && num <= 50) {
-                const file = 'unit' + String(num).padStart(2, '0') + '.html';
-                select.value = file;
-                iframe.src = file;
+                const idx = num - 1;
+                select.selectedIndex = idx;
+                applySrc();
             }
         }
 
         select.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
-                iframe.src = select.value;
+                applySrc();
             }
         });
     </script>

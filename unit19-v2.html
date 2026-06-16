@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元19-v2：單元19：【站】-sti-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            width: 100px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-2 md:p-6 text-gray-800">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <!-- 標題區 -->
+        <div class="bg-indigo-600 text-white p-4 md:p-6 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold mb-1">📚 英文單字字根學習單 v2（整合版）</h1>
+            <h2 class="text-lg md:text-xl">單元19：【站】-sti-</h2>
+            <p class="mt-2 text-indigo-100 text-xs md:text-sm">💡 單頁整合版：影片連結 + 字詞＋克漏字＋魔王題</p>
+        </div>
+
+        <div class="p-3 md:p-6">
+            <!-- 單元影片連結 -->
+            <div class="mb-6">
+                <a href="https://www.youtube.com/watch?v=IaYM5ev70-k" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-lg transition shadow">
+                    <span class="text-xl">▶</span> 在 YouTube 觀看此單元影片
+                </a>
+            </div>
+
+            <!-- Part 1 核心單字 -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('still')"><span class="text-2xl font-bold text-blue-700">still</span><span class="text-gray-500 ml-2">(adj./adv.) 安靜的</span></div><div class="speakable p-2 -mx-2" onclick="speak('Please be still.')"><p class="text-gray-700 font-medium">Please be <span class="text-blue-600 font-bold">still</span>.</p><p class="text-gray-500 text-sm mt-1">請保持安靜。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('insist')"><span class="text-2xl font-bold text-blue-700">insist</span><span class="text-gray-500 ml-2">(v.) 堅持</span></div><div class="speakable p-2 -mx-2" onclick="speak('I insist on facts.')"><p class="text-gray-700 font-medium">I <span class="text-blue-600 font-bold">insist</span> on facts.</p><p class="text-gray-500 text-sm mt-1">我堅持事實。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('persist')"><span class="text-2xl font-bold text-blue-700">persist</span><span class="text-gray-500 ml-2">(v.) 持續</span></div><div class="speakable p-2 -mx-2" onclick="speak('She persists in practice.')"><p class="text-gray-700 font-medium">She <span class="text-blue-600 font-bold">persists</span> in practice.</p><p class="text-gray-500 text-sm mt-1">她持續練習。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('assist')"><span class="text-2xl font-bold text-blue-700">assist</span><span class="text-gray-500 ml-2">(v.) 協助</span></div><div class="speakable p-2 -mx-2" onclick="speak('Please assist me now.')"><p class="text-gray-700 font-medium">Please <span class="text-blue-600 font-bold">assist</span> me now.</p><p class="text-gray-500 text-sm mt-1">請現在協助我。</p></div></div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200"><div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('exist')"><span class="text-2xl font-bold text-blue-700">exist</span><span class="text-gray-500 ml-2">(v.) 存在</span></div><div class="speakable p-2 -mx-2" onclick="speak('Problems can exist anywhere.')"><p class="text-gray-700 font-medium">Problems can <span class="text-blue-600 font-bold">exist</span> anywhere.</p><p class="text-gray-500 text-sm mt-1">問題可能無處不在。</p></div></div>
+                </div>
+            </section>
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center"><span class="text-blue-600 mr-2">
+            </section>
+
+            <!-- Part 2 克漏字 -->
+            <section class="mb-10 bg-blue-50 p-5 md:p-7 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-5 text-gray-700 font-medium text-sm md:text-base">請閱讀以下短文，並根據空格上方的「中文提示」填寫適當的單字。</p>
+                <div class="text-lg md:text-xl leading-[3rem] text-gray-800 bg-white p-4 md:p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="mb-6 text-gray-700 font-medium">請閱讀短文，依提示填寫單字。</p>
+                <div class="text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    The lake is very 
+                    <span class="blank-wrapper"><span class="blank-hint">1. 安靜的</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
+                    . I will 
+                    <span class="blank-wrapper"><span class="blank-hint">2. 堅持</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
+                    on truth. Errors can still 
+                    <span class="blank-wrapper"><span class="blank-hint">3. 存在</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
+                    in code. Can I 
+                    <span class="blank-wrapper"><span class="blank-hint">4. 協助</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
+                    you? Don't 
+                    <span class="blank-wrapper"><span class="blank-hint">5. 持續</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
+                    lying.
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">👑 魔王加分題 (
+                </div>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-5 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-5 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <!-- 魔王加分題 -->
+            <section class="bg-orange-50 p-4 md:p-6 rounded-xl border border-orange-200">
+                <h3 class="text-lg md:text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                Bonus Words)</h3>
+                <p class="text-sm text-gray-600 mb-4">還有這些相關單字，點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('statue')"><p class="font-bold text-orange-600">statue</p><p class="text-xs text-gray-500">雕像</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('constant')"><p class="font-bold text-orange-600">constant</p><p class="text-xs text-gray-500">不斷的</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('restore')"><p class="font-bold text-orange-600">restore</p><p class="text-xs text-gray-500">恢復</p></div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('assistant')"><p class="font-bold text-orange-600">assistant</p><p class="text-xs text-gray-500">助手</p></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US';
+                msg.rate = 0.9;
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+        const answers = {"q1": "still", "q2": "insist", "q3": "exist", "q4": "assist", "q5": "persist"};
+        function checkAnswers() {
+            let correct = 0;
+            const total = Object.keys(answers).length;
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                const val = input.value.trim().toLowerCase();
+                input.classList.remove('correct','incorrect');
+                if (val === answers[id]) {
+                    input.classList.add('correct');
+                    correct++;
+                } else {
+                    if (val !== "") input.classList.add('incorrect');
+                }
+            }
+            const msg = document.getElementById('result-msg');
+            msg.classList.remove('hidden','text-green-600','text-red-600');
+            if (correct === total) {
+                msg.innerText = "🎉 太棒了！全部答對！";
+                msg.classList.add('text-green-600');
+            } else {
+                msg.innerText = `💪 你答對了 ${correct} / ${total} 題，再試試看！(紅色為錯誤)`;
+                msg.classList.add('text-red-600');
+            }
+        }
+        function showAnswers() {
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                input.value = answers[id];
+                input.classList.remove('incorrect');
+                input.classList.add('correct');
+            }
+            const msg = document.getElementById('result-msg');
+            msg.classList.remove('hidden','text-red-600');
+            msg.classList.add('text-green-600');
+            msg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+        function clearAnswers() {
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                input.value = "";
+                input.classList.remove('correct','incorrect');
+            }
+            document.getElementById('result-msg').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
