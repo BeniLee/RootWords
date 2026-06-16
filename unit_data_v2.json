@@ -1,0 +1,5441 @@
+[
+  {
+    "unit": 1,
+    "h2": "單元一：【腳】 -ped- / -pod-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "peddle",
+        "pos": "v.",
+        "cn": ") 兜售、叫賣",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "peddler",
+        "pos": "n.",
+        "cn": ") 小販",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pedal",
+        "pos": "n.",
+        "cn": ") 踏板",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pedestrian",
+        "pos": "n.",
+        "cn": ") 行人",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impede",
+        "pos": "v.",
+        "cn": ") 妨礙、阻礙",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impediment",
+        "pos": "n.",
+        "cn": ") 絆腳石、障礙",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "expedition",
+        "pos": "n.",
+        "cn": ") 遠征、探險",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "expedite",
+        "pos": "v.",
+        "cn": ") 加速、加快",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "centipede",
+        "pos": "n.",
+        "cn": ") 蜈蚣",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "millipede",
+        "pos": "n.",
+        "cn": ") 馬陸、千足蟲",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pedicure",
+        "pos": "n.",
+        "cn": ") 足部護理",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "tripod",
+        "pos": "n.",
+        "cn": ") 三腳架",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "manicure",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "passerby",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "century",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "triangle",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "行人",
+        "qid": "q1",
+        "answer": "pedestrian"
+      },
+      {
+        "num": "2",
+        "hint": "小販",
+        "qid": "q2",
+        "answer": "peddler"
+      },
+      {
+        "num": "3",
+        "hint": "兜售",
+        "qid": "q3",
+        "answer": "peddle"
+      },
+      {
+        "num": "4",
+        "hint": "蜈蚣",
+        "qid": "q4",
+        "answer": "centipede"
+      },
+      {
+        "num": "5",
+        "hint": "三腳架",
+        "qid": "q5",
+        "answer": "tripod"
+      },
+      {
+        "num": "6",
+        "hint": "踏板",
+        "qid": "q6",
+        "answer": "pedal"
+      },
+      {
+        "num": "7",
+        "hint": "阻礙",
+        "qid": "q7",
+        "answer": "impede"
+      },
+      {
+        "num": "8",
+        "hint": "探險",
+        "qid": "q8",
+        "answer": "expedition"
+      }
+    ]
+  },
+  {
+    "unit": 2,
+    "h2": "單元二：【手】 -man-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "manicure",
+        "pos": "n.",
+        "cn": ") 手部護理",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manipulate",
+        "pos": "v.",
+        "cn": ") 操縱、控制",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manipulation",
+        "pos": "n.",
+        "cn": ") 操縱、操控",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manual",
+        "pos": "n.",
+        "cn": "/adj.) 手冊 / 手動的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manufacture",
+        "pos": "v.",
+        "cn": ") 製造",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manufacturing",
+        "pos": "n.",
+        "cn": ") 製造業",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manufacturer",
+        "pos": "n.",
+        "cn": ") 製造商",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "automate",
+        "pos": "v.",
+        "cn": ") 自動化",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "automated",
+        "pos": "adj.",
+        "cn": ") 已自動化的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "automatic",
+        "pos": "adj.",
+        "cn": ") 自動的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manuscript",
+        "pos": "n.",
+        "cn": ") 手稿",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "transcript",
+        "pos": "n.",
+        "cn": ") 成績單、謄本",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "postscript",
+        "pos": "n.",
+        "cn": ") 附言、PS",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "manacle",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manage",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "human",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "maintain",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "手冊",
+        "qid": "q1",
+        "answer": "manual"
+      },
+      {
+        "num": "2",
+        "hint": "製造",
+        "qid": "q2",
+        "answer": "manufacture"
+      },
+      {
+        "num": "3",
+        "hint": "已自動化的",
+        "qid": "q3",
+        "answer": "automated"
+      },
+      {
+        "num": "4",
+        "hint": "製造商",
+        "qid": "q4",
+        "answer": "manufacturer"
+      },
+      {
+        "num": "5",
+        "hint": "自動化",
+        "qid": "q5",
+        "answer": "automate"
+      },
+      {
+        "num": "6",
+        "hint": "手稿",
+        "qid": "q6",
+        "answer": "manuscript"
+      },
+      {
+        "num": "7",
+        "hint": "成績單",
+        "qid": "q7",
+        "answer": "transcript"
+      },
+      {
+        "num": "8",
+        "hint": "附言",
+        "qid": "q8",
+        "answer": "postscript"
+      }
+    ]
+  },
+  {
+    "unit": 3,
+    "h2": "單元三：【看】 -spect-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "expect",
+        "pos": "v.",
+        "cn": ") 預期、期待",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inspect",
+        "pos": "v.",
+        "cn": ") 檢查、檢視",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "spectator",
+        "pos": "n.",
+        "cn": ") 觀眾、旁觀者",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "spectacle",
+        "pos": "n.",
+        "cn": ") 奇觀、盛況",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "spectacular",
+        "pos": "adj.",
+        "cn": ") 壯觀的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "perspective",
+        "pos": "n.",
+        "cn": ") 觀點、透視",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "prospect",
+        "pos": "n.",
+        "cn": ") 展望、前景",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "suspect",
+        "pos": "v.",
+        "cn": ") 懷疑、猜測",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "respect",
+        "pos": "n.",
+        "cn": "/v.) 尊重",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "retrospective",
+        "pos": "adj.",
+        "cn": ") 回顧的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aspect",
+        "pos": "n.",
+        "cn": ") 層面、方面",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "circumspect",
+        "pos": "adj.",
+        "cn": ") 慎重的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inspection",
+        "pos": "n.",
+        "cn": ") 檢查、查驗",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "spectacles",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "circumspection",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "retrospect",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "prospective",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "觀看",
+        "qid": "q1",
+        "answer": "respect"
+      },
+      {
+        "num": "2",
+        "hint": "角度",
+        "qid": "q2",
+        "answer": "perspective"
+      },
+      {
+        "num": "3",
+        "hint": "觀眾",
+        "qid": "q3",
+        "answer": "spectator"
+      },
+      {
+        "num": "4",
+        "hint": "預期",
+        "qid": "q4",
+        "answer": "expect"
+      },
+      {
+        "num": "5",
+        "hint": "壯觀的",
+        "qid": "q5",
+        "answer": "spectacular"
+      },
+      {
+        "num": "6",
+        "hint": "檢查",
+        "qid": "q6",
+        "answer": "inspection"
+      },
+      {
+        "num": "7",
+        "hint": "被懷疑",
+        "qid": "q7",
+        "answer": "suspected"
+      },
+      {
+        "num": "8",
+        "hint": "觀點",
+        "qid": "q8",
+        "answer": "perspective"
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "h2": "單元四：【價值】 -preci- / -val-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "precious",
+        "pos": "adj.",
+        "cn": ") 珍貴的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "appreciate",
+        "pos": "v.",
+        "cn": ") 欣賞、感謝",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "depreciate",
+        "pos": "v.",
+        "cn": ") 貶值、 depreciate",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "valuable",
+        "pos": "adj.",
+        "cn": ") 有價值的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "invaluable",
+        "pos": "adj.",
+        "cn": ") 無價的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "evaluate",
+        "pos": "v.",
+        "cn": ") 評估、評價",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "appraise",
+        "pos": "v.",
+        "cn": ") 估價、鑑定",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "devalue",
+        "pos": "v.",
+        "cn": ") 使貶值",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "priceless",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "worthless",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "praise",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "equivalent",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "有價值的",
+        "qid": "q1",
+        "answer": "valuable"
+      },
+      {
+        "num": "2",
+        "hint": "評估",
+        "qid": "q2",
+        "answer": "evaluate"
+      },
+      {
+        "num": "3",
+        "hint": "貶值",
+        "qid": "q3",
+        "answer": "depreciate"
+      },
+      {
+        "num": "4",
+        "hint": "低估",
+        "qid": "q4",
+        "answer": "underestimate"
+      },
+      {
+        "num": "5",
+        "hint": "無價的",
+        "qid": "q5",
+        "answer": "invaluable"
+      },
+      {
+        "num": "6",
+        "hint": "欣賞",
+        "qid": "q6",
+        "answer": "appreciate"
+      },
+      {
+        "num": "7",
+        "hint": "估價",
+        "qid": "q7",
+        "answer": "appraise"
+      }
+    ]
+  },
+  {
+    "unit": 5,
+    "h2": "單元五：【說】 -dict-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "predict",
+        "pos": "v.",
+        "cn": ") 預測",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dictionary",
+        "pos": "n.",
+        "cn": ") 字典",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dictate",
+        "pos": "v.",
+        "cn": ") 口述、命令",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dictator",
+        "pos": "n.",
+        "cn": ") 獨裁者",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "contradict",
+        "pos": "v.",
+        "cn": ") 反駁、矛盾",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "malediction",
+        "pos": "n.",
+        "cn": ") 詛咒、惡言",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "benediction",
+        "pos": "n.",
+        "cn": ") 祝福",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "abdicate",
+        "pos": "v.",
+        "cn": ") 退位、放棄",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "forecast",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dictation",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proverb",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dictum",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "預測",
+        "qid": "q1",
+        "answer": "predict"
+      },
+      {
+        "num": "2",
+        "hint": "口述",
+        "qid": "q2",
+        "answer": "dictate"
+      },
+      {
+        "num": "3",
+        "hint": "矛盾",
+        "qid": "q3",
+        "answer": "contradict"
+      },
+      {
+        "num": "4",
+        "hint": "退位",
+        "qid": "q4",
+        "answer": "abdicate"
+      },
+      {
+        "num": "5",
+        "hint": "祝福",
+        "qid": "q5",
+        "answer": "benediction"
+      },
+      {
+        "num": "6",
+        "hint": "詛咒",
+        "qid": "q6",
+        "answer": "malediction"
+      }
+    ]
+  },
+  {
+    "unit": 6,
+    "h2": "單元六：【寫】 -scribe-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "describe",
+        "pos": "v.",
+        "cn": ") 描述",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "subscribe",
+        "pos": "v.",
+        "cn": ") 訂閱、訂購",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "transcribe",
+        "pos": "v.",
+        "cn": ") 謄寫、轉錄",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "prescribe",
+        "pos": "v.",
+        "cn": ") 開處方、規定",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manuscript",
+        "pos": "n.",
+        "cn": ") 手稿",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inscribe",
+        "pos": "v.",
+        "cn": ") 題寫、銘刻",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "circumscribe",
+        "pos": "v.",
+        "cn": ") 限制、包圍",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "scribble",
+        "pos": "v.",
+        "cn": ") 亂寫、塗鴉",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "description",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "transcript",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "postscript",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inscription",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "描述",
+        "qid": "q1",
+        "answer": "describe"
+      },
+      {
+        "num": "2",
+        "hint": "手稿",
+        "qid": "q2",
+        "answer": "manuscript"
+      },
+      {
+        "num": "3",
+        "hint": "限制",
+        "qid": "q3",
+        "answer": "circumscribe"
+      },
+      {
+        "num": "4",
+        "hint": "訂閱",
+        "qid": "q4",
+        "answer": "subscribe"
+      },
+      {
+        "num": "5",
+        "hint": "開處方",
+        "qid": "q5",
+        "answer": "prescribe"
+      },
+      {
+        "num": "6",
+        "hint": "謄寫",
+        "qid": "q6",
+        "answer": "transcribe"
+      }
+    ]
+  },
+  {
+    "unit": 7,
+    "h2": "單元七：【拉】 -tract-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "attract",
+        "pos": "v.",
+        "cn": ") 吸引",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "distract",
+        "pos": "v.",
+        "cn": ") 分心、轉移",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "contract",
+        "pos": "n.",
+        "cn": ") 合約 (v.) 收縮",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "extract",
+        "pos": "v.",
+        "cn": ") 提取、拔出",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "retract",
+        "pos": "v.",
+        "cn": ") 撤回、收回",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "tractor",
+        "pos": "n.",
+        "cn": ") 曳引機",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "subtract",
+        "pos": "v.",
+        "cn": ") 減去",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "protract",
+        "pos": "v.",
+        "cn": ") 延長",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "attraction",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "distraction",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "tract",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "intractable",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "吸引",
+        "qid": "q1",
+        "answer": "attract"
+      },
+      {
+        "num": "2",
+        "hint": "提取",
+        "qid": "q2",
+        "answer": "extract"
+      },
+      {
+        "num": "3",
+        "hint": "撤回",
+        "qid": "q3",
+        "answer": "retract"
+      },
+      {
+        "num": "4",
+        "hint": "減去",
+        "qid": "q4",
+        "answer": "subtract"
+      },
+      {
+        "num": "5",
+        "hint": "延長",
+        "qid": "q5",
+        "answer": "protract"
+      }
+    ]
+  },
+  {
+    "unit": 8,
+    "h2": "單元八：【推】 -pel-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "expel",
+        "pos": "v.",
+        "cn": ") 驅逐、開除",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "propel",
+        "pos": "v.",
+        "cn": ") 推進、驅動",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "repel",
+        "pos": "v.",
+        "cn": ") 擊退、排斥",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impulse",
+        "pos": "n.",
+        "cn": ") 衝動、衝力",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "compel",
+        "pos": "v.",
+        "cn": ") 迫使、強制",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "compulsory",
+        "pos": "adj.",
+        "cn": ") 強制的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "deport",
+        "pos": "v.",
+        "cn": ") 驅逐出境",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "portable",
+        "pos": "adj.",
+        "cn": ") 可攜帶的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "compulsion",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "expulsion",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impulsive",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "port",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "驅逐",
+        "qid": "q1",
+        "answer": "expel"
+      },
+      {
+        "num": "2",
+        "hint": "推進",
+        "qid": "q2",
+        "answer": "propel"
+      },
+      {
+        "num": "3",
+        "hint": "擊退",
+        "qid": "q3",
+        "answer": "repel"
+      },
+      {
+        "num": "4",
+        "hint": "衝動",
+        "qid": "q4",
+        "answer": "impulse"
+      },
+      {
+        "num": "5",
+        "hint": "迫使",
+        "qid": "q5",
+        "answer": "compel"
+      },
+      {
+        "num": "6",
+        "hint": "強制的",
+        "qid": "q6",
+        "answer": "compulsory"
+      }
+    ]
+  },
+  {
+    "unit": 9,
+    "h2": "單元九：【島】 -insul-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "insulate",
+        "pos": "v.",
+        "cn": ") 隔離、保溫",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "insulation",
+        "pos": "n.",
+        "cn": ") 絕緣、保溫",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "isolate",
+        "pos": "v.",
+        "cn": ") 隔離、孤立",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "peninsula",
+        "pos": "n.",
+        "cn": ") 半島",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "insulin",
+        "pos": "n.",
+        "cn": ") 胰島素",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "solitary",
+        "pos": "adj.",
+        "cn": ") 孤單的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "solitude",
+        "pos": "n.",
+        "cn": ") 獨處、隱居",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "isle",
+        "pos": "n.",
+        "cn": ") 小島",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "isolation",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "isolated",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "sole",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "insular",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "島",
+        "qid": "q1",
+        "answer": "isle"
+      },
+      {
+        "num": "2",
+        "hint": "隔離",
+        "qid": "q2",
+        "answer": "isolate"
+      },
+      {
+        "num": "3",
+        "hint": "保溫",
+        "qid": "q3",
+        "answer": "insulation"
+      },
+      {
+        "num": "4",
+        "hint": "島國",
+        "qid": "q4",
+        "answer": "island"
+      },
+      {
+        "num": "5",
+        "hint": "半島",
+        "qid": "q5",
+        "answer": "peninsula"
+      },
+      {
+        "num": "6",
+        "hint": "獨處",
+        "qid": "q6",
+        "answer": "solitude"
+      }
+    ]
+  },
+  {
+    "unit": 10,
+    "h2": "單元十：【破裂】 -rupt-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "bankrupt",
+        "pos": "adj.",
+        "cn": ") 破產的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "erupt",
+        "pos": "v.",
+        "cn": ") 爆發（火山）",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "outbreak",
+        "pos": "n.",
+        "cn": ") 爆發、暴發",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "corrupt",
+        "pos": "adj.",
+        "cn": ") 腐敗的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "rupture",
+        "pos": "n.",
+        "cn": "/v.) 破裂、爆裂",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "interrupt",
+        "pos": "v.",
+        "cn": ") 打斷",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "disrupt",
+        "pos": "v.",
+        "cn": ") 擾亂、中斷",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "abrupt",
+        "pos": "adj.",
+        "cn": ") 突然的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "bankruptcy",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "corruption",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "eruption",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "abruptly",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "破裂",
+        "qid": "q1",
+        "answer": "rupture"
+      },
+      {
+        "num": "2",
+        "hint": "打斷",
+        "qid": "q2",
+        "answer": "interrupt"
+      },
+      {
+        "num": "3",
+        "hint": "爆發",
+        "qid": "q3",
+        "answer": "erupt"
+      },
+      {
+        "num": "4",
+        "hint": "擾亂",
+        "qid": "q4",
+        "answer": "disrupt"
+      },
+      {
+        "num": "5",
+        "hint": "突然的",
+        "qid": "q5",
+        "answer": "abruptly"
+      },
+      {
+        "num": "6",
+        "hint": "破產",
+        "qid": "q6",
+        "answer": "bankrupt"
+      }
+    ]
+  },
+  {
+    "unit": 11,
+    "h2": "單元11：【流動】 -flu-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "fluent",
+        "pos": "adj.",
+        "cn": ") 流暢的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "influence",
+        "pos": "n.",
+        "cn": "/v.) 影響",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "fluid",
+        "pos": "n.",
+        "cn": "/adj.) 流體 / 流動的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "influx",
+        "pos": "n.",
+        "cn": ") 湧入",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "affluent",
+        "pos": "adj.",
+        "cn": ") 富裕的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "flow",
+        "pos": "v.",
+        "cn": "/n.) 流動",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "confluence",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "flu",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "liquor",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "influenza",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "流動",
+        "qid": "q1",
+        "answer": "flow"
+      },
+      {
+        "num": "2",
+        "hint": "湧入",
+        "qid": "q2",
+        "answer": "influx"
+      },
+      {
+        "num": "3",
+        "hint": "流暢的",
+        "qid": "q3",
+        "answer": "fluent"
+      },
+      {
+        "num": "4",
+        "hint": "影響",
+        "qid": "q4",
+        "answer": "influence"
+      },
+      {
+        "num": "5",
+        "hint": "流體",
+        "qid": "q5",
+        "answer": "fluid"
+      }
+    ]
+  },
+  {
+    "unit": 12,
+    "h2": "單元12：【做】 -fact-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "factory",
+        "pos": "n.",
+        "cn": ") 工廠",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "manufacture",
+        "pos": "v.",
+        "cn": ") 製造",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "perfect",
+        "pos": "adj.",
+        "cn": ") 完美的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "affect",
+        "pos": "v.",
+        "cn": ") 影響",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "effect",
+        "pos": "n.",
+        "cn": ") 效果",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "benefactor",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "malefactor",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "factual",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "artifact",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "工廠",
+        "qid": "q1",
+        "answer": "factory"
+      },
+      {
+        "num": "2",
+        "hint": "製造",
+        "qid": "q2",
+        "answer": "manufacture"
+      },
+      {
+        "num": "3",
+        "hint": "影響",
+        "qid": "q3",
+        "answer": "affect"
+      },
+      {
+        "num": "4",
+        "hint": "效果",
+        "qid": "q4",
+        "answer": "effect"
+      },
+      {
+        "num": "5",
+        "hint": "完美的",
+        "qid": "q5",
+        "answer": "perfect"
+      }
+    ]
+  },
+  {
+    "unit": 13,
+    "h2": "單元13：【做】 -fect-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "affect",
+        "pos": "v.",
+        "cn": ") 影響",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "effect",
+        "pos": "n.",
+        "cn": ") 效果",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "infect",
+        "pos": "v.",
+        "cn": ") 感染",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "perfect",
+        "pos": "adj.",
+        "cn": ") 完美的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "defect",
+        "pos": "n.",
+        "cn": ") 缺點",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "efficient",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proficient",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "ineffective",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "contagious",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "影響",
+        "qid": "q1",
+        "answer": "affect"
+      },
+      {
+        "num": "2",
+        "hint": "效果",
+        "qid": "q2",
+        "answer": "effect"
+      },
+      {
+        "num": "3",
+        "hint": "感染",
+        "qid": "q3",
+        "answer": "infect"
+      },
+      {
+        "num": "4",
+        "hint": "完美的",
+        "qid": "q4",
+        "answer": "perfect"
+      },
+      {
+        "num": "5",
+        "hint": "缺點",
+        "qid": "q5",
+        "answer": "defect"
+      }
+    ]
+  },
+  {
+    "unit": 14,
+    "h2": "單元14：【聲音／心】-son- / -cord-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "sonic",
+        "pos": "adj.",
+        "cn": ") 音波的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "person",
+        "pos": "n.",
+        "cn": ") 人",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "concord",
+        "pos": "n.",
+        "cn": ") 和諧",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "discord",
+        "pos": "n.",
+        "cn": ") 不和",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "record",
+        "pos": "n.",
+        "cn": "/v.) 記錄",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "resonance",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "diverse",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "accord",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "consensus",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "聲音",
+        "qid": "q1",
+        "answer": "sound"
+      },
+      {
+        "num": "2",
+        "hint": "和諧",
+        "qid": "q2",
+        "answer": "concord"
+      },
+      {
+        "num": "3",
+        "hint": "記錄",
+        "qid": "q3",
+        "answer": "record"
+      },
+      {
+        "num": "4",
+        "hint": "人",
+        "qid": "q4",
+        "answer": "person"
+      },
+      {
+        "num": "5",
+        "hint": "不和",
+        "qid": "q5",
+        "answer": "discord"
+      }
+    ]
+  },
+  {
+    "unit": 15,
+    "h2": "單元15：【光】-light- / -rad-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "light",
+        "pos": "n.",
+        "cn": "/adj.) 光 / 輕的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "lamp",
+        "pos": "n.",
+        "cn": ") 燈",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "radiant",
+        "pos": "adj.",
+        "cn": ") 散發光芒的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "illustrate",
+        "pos": "v.",
+        "cn": ") 闡明",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "enlighten",
+        "pos": "v.",
+        "cn": ") 啟發",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "brilliant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "cluster",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "clear",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "radiate",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "光",
+        "qid": "q1",
+        "answer": "light"
+      },
+      {
+        "num": "2",
+        "hint": "散發光芒的",
+        "qid": "q2",
+        "answer": "radiant"
+      },
+      {
+        "num": "3",
+        "hint": "闡明",
+        "qid": "q3",
+        "answer": "illustrate"
+      },
+      {
+        "num": "4",
+        "hint": "啟發",
+        "qid": "q4",
+        "answer": "enlighten"
+      },
+      {
+        "num": "5",
+        "hint": "燈",
+        "qid": "q5",
+        "answer": "lamp"
+      }
+    ]
+  },
+  {
+    "unit": 16,
+    "h2": "單元16：【懸掛】-pend-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "suspend",
+        "pos": "v.",
+        "cn": ") 暫停",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "depend",
+        "pos": "v.",
+        "cn": ") 依賴",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pendant",
+        "pos": "n.",
+        "cn": ") 垂飾",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pending",
+        "pos": "adj.",
+        "cn": ") 待定的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "append",
+        "pos": "v.",
+        "cn": ") 附上",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "expend",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pendulum",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "independently",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "perpendicular",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "待定的",
+        "qid": "q1",
+        "answer": "pending"
+      },
+      {
+        "num": "2",
+        "hint": "附上",
+        "qid": "q2",
+        "answer": "append"
+      },
+      {
+        "num": "3",
+        "hint": "垂飾",
+        "qid": "q3",
+        "answer": "pendant"
+      },
+      {
+        "num": "4",
+        "hint": "依賴",
+        "qid": "q4",
+        "answer": "depend"
+      },
+      {
+        "num": "5",
+        "hint": "暫停",
+        "qid": "q5",
+        "answer": "suspend"
+      }
+    ]
+  },
+  {
+    "unit": 17,
+    "h2": "單元17：【懸掛】-pend- (PART 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "suspend",
+        "pos": "v.",
+        "cn": ") 暫停",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "depend",
+        "pos": "v.",
+        "cn": ") 依賴",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pendant",
+        "pos": "n.",
+        "cn": ") 垂飾",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pending",
+        "pos": "adj.",
+        "cn": ") 待定的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "append",
+        "pos": "v.",
+        "cn": ") 附上",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "expend",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pendulum",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "independently",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "perpendicular",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "待定的",
+        "qid": "q1",
+        "answer": "pending"
+      },
+      {
+        "num": "2",
+        "hint": "附上",
+        "qid": "q2",
+        "answer": "append"
+      },
+      {
+        "num": "3",
+        "hint": "垂飾",
+        "qid": "q3",
+        "answer": "pendant"
+      },
+      {
+        "num": "4",
+        "hint": "依賴",
+        "qid": "q4",
+        "answer": "depend"
+      },
+      {
+        "num": "5",
+        "hint": "暫停",
+        "qid": "q5",
+        "answer": "suspend"
+      }
+    ]
+  },
+  {
+    "unit": 18,
+    "h2": "單元18：【站】-sta-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "station",
+        "pos": "n.",
+        "cn": ") 車站",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "stable",
+        "pos": "adj.",
+        "cn": "/n.) 穩定的 / 馬廄",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "state",
+        "pos": "v.",
+        "cn": "/n.) 陳述",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "status",
+        "pos": "n.",
+        "cn": ") 狀態",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "establish",
+        "pos": "v.",
+        "cn": ") 建立",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "statue",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "destination",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "instant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "stationary",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "車站",
+        "qid": "q1",
+        "answer": "station"
+      },
+      {
+        "num": "2",
+        "hint": "穩定的",
+        "qid": "q2",
+        "answer": "stable"
+      },
+      {
+        "num": "3",
+        "hint": "陳述",
+        "qid": "q3",
+        "answer": "state"
+      },
+      {
+        "num": "4",
+        "hint": "狀態",
+        "qid": "q4",
+        "answer": "status"
+      },
+      {
+        "num": "5",
+        "hint": "建立",
+        "qid": "q5",
+        "answer": "establish"
+      }
+    ]
+  },
+  {
+    "unit": 19,
+    "h2": "單元19：【站】-sti-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "still",
+        "pos": "adj.",
+        "cn": "/adv.) 安靜的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "insist",
+        "pos": "v.",
+        "cn": ") 堅持",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "persist",
+        "pos": "v.",
+        "cn": ") 持續",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "assist",
+        "pos": "v.",
+        "cn": ") 協助",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "exist",
+        "pos": "v.",
+        "cn": ") 存在",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "statue",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "constant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "restore",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "assistant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "安靜的",
+        "qid": "q1",
+        "answer": "still"
+      },
+      {
+        "num": "2",
+        "hint": "堅持",
+        "qid": "q2",
+        "answer": "insist"
+      },
+      {
+        "num": "3",
+        "hint": "存在",
+        "qid": "q3",
+        "answer": "exist"
+      },
+      {
+        "num": "4",
+        "hint": "協助",
+        "qid": "q4",
+        "answer": "assist"
+      },
+      {
+        "num": "5",
+        "hint": "持續",
+        "qid": "q5",
+        "answer": "persist"
+      }
+    ]
+  },
+  {
+    "unit": 20,
+    "h2": "單元20：【站】-sist-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "insist",
+        "pos": "v.",
+        "cn": ") 堅持",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "exist",
+        "pos": "v.",
+        "cn": ") 存在",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "assist",
+        "pos": "v.",
+        "cn": ") 協助",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "resist",
+        "pos": "v.",
+        "cn": ") 抵制",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "consist",
+        "pos": "v.",
+        "cn": ") 由...組成",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "subsist",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "desist",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "persistence",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "assistant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "堅持",
+        "qid": "q1",
+        "answer": "insist"
+      },
+      {
+        "num": "2",
+        "hint": "存在",
+        "qid": "q2",
+        "answer": "exist"
+      },
+      {
+        "num": "3",
+        "hint": "協助",
+        "qid": "q3",
+        "answer": "assist"
+      },
+      {
+        "num": "4",
+        "hint": "抵制",
+        "qid": "q4",
+        "answer": "resist"
+      },
+      {
+        "num": "5",
+        "hint": "由...組成",
+        "qid": "q5",
+        "answer": "consists"
+      }
+    ]
+  },
+  {
+    "unit": 21,
+    "h2": "單元21：生物特性相關",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "trait",
+        "pos": "n.",
+        "cn": ") 特徵",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "genetic",
+        "pos": "adj.",
+        "cn": ") 基因的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "survival",
+        "pos": "n.",
+        "cn": ") 生存",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "adaptation",
+        "pos": "n.",
+        "cn": ") 適應",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "instinct",
+        "pos": "n.",
+        "cn": ") 本能",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "evolve",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "species",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inherit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habitat",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "特徵",
+        "qid": "q1",
+        "answer": "trait"
+      },
+      {
+        "num": "2",
+        "hint": "基因的",
+        "qid": "q2",
+        "answer": "genetic"
+      },
+      {
+        "num": "3",
+        "hint": "生存",
+        "qid": "q3",
+        "answer": "survival"
+      },
+      {
+        "num": "4",
+        "hint": "適應",
+        "qid": "q4",
+        "answer": "adaptation"
+      },
+      {
+        "num": "5",
+        "hint": "本能",
+        "qid": "q5",
+        "answer": "instinct"
+      }
+    ]
+  },
+  {
+    "unit": 22,
+    "h2": "單元22：【坐】-sid-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "preside",
+        "pos": "v.",
+        "cn": ") 主持",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "reside",
+        "pos": "v.",
+        "cn": ") 居住",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "subside",
+        "pos": "v.",
+        "cn": ") 減退",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "consider",
+        "pos": "v.",
+        "cn": ") 考慮",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dissident",
+        "pos": "n.",
+        "cn": ") 持異議者",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "president",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "residence",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dissolve",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "sitting",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "主持",
+        "qid": "q1",
+        "answer": "preside"
+      },
+      {
+        "num": "2",
+        "hint": "居住",
+        "qid": "q2",
+        "answer": "reside"
+      },
+      {
+        "num": "3",
+        "hint": "減退",
+        "qid": "q3",
+        "answer": "subside"
+      },
+      {
+        "num": "4",
+        "hint": "考慮",
+        "qid": "q4",
+        "answer": "consider"
+      },
+      {
+        "num": "5",
+        "hint": "持異議者",
+        "qid": "q5",
+        "answer": "dissident"
+      }
+    ]
+  },
+  {
+    "unit": 23,
+    "h2": "單元23：【來】-ven-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "venue",
+        "pos": "n.",
+        "cn": ") 地點",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "convene",
+        "pos": "v.",
+        "cn": ") 召集",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "intervene",
+        "pos": "v.",
+        "cn": ") 介入",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "prevent",
+        "pos": "v.",
+        "cn": ") 預防",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "eventually",
+        "pos": "adv.",
+        "cn": ") 最終",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "revenue",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "avenue",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "convenient",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "prevention",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "召集",
+        "qid": "q1",
+        "answer": "convenes"
+      },
+      {
+        "num": "2",
+        "hint": "地點",
+        "qid": "q2",
+        "answer": "venue"
+      },
+      {
+        "num": "3",
+        "hint": "介入",
+        "qid": "q3",
+        "answer": "intervene"
+      },
+      {
+        "num": "4",
+        "hint": "預防",
+        "qid": "q4",
+        "answer": "prevent"
+      },
+      {
+        "num": "5",
+        "hint": "最終",
+        "qid": "q5",
+        "answer": "eventually"
+      }
+    ]
+  },
+  {
+    "unit": 24,
+    "h2": "單元24：【來】-vent- (Part 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "ventilate",
+        "pos": "v.",
+        "cn": ") 通風",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "invent",
+        "pos": "v.",
+        "cn": ") 發明",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "venture",
+        "pos": "n.",
+        "cn": "/v.) 冒險 / 投機",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "adventure",
+        "pos": "n.",
+        "cn": ") 冒險",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "preventive",
+        "pos": "adj.",
+        "cn": ") 預防的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "vent",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "ventilation",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "venture",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "convention",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "通風",
+        "qid": "q1",
+        "answer": "ventilate"
+      },
+      {
+        "num": "2",
+        "hint": "發明",
+        "qid": "q2",
+        "answer": "invent"
+      },
+      {
+        "num": "3",
+        "hint": "冒險",
+        "qid": "q3",
+        "answer": "venture"
+      },
+      {
+        "num": "4",
+        "hint": "冒險",
+        "qid": "q4",
+        "answer": "adventure"
+      },
+      {
+        "num": "5",
+        "hint": "預防的",
+        "qid": "q5",
+        "answer": "preventive"
+      }
+    ]
+  },
+  {
+    "unit": 25,
+    "h2": "單元25：【爬】-scend-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "ascend",
+        "pos": "v.",
+        "cn": ") 上升",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "descend",
+        "pos": "v.",
+        "cn": ") 下降",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "transcend",
+        "pos": "v.",
+        "cn": ") 超越",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "condescend",
+        "pos": "v.",
+        "cn": ") 屈尊",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "descent",
+        "pos": "n.",
+        "cn": ") 下降",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "ascendant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "descendant",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "transcendent",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "condescension",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "上升",
+        "qid": "q1",
+        "answer": "ascend"
+      },
+      {
+        "num": "2",
+        "hint": "下降",
+        "qid": "q2",
+        "answer": "descends"
+      },
+      {
+        "num": "3",
+        "hint": "超越",
+        "qid": "q3",
+        "answer": "transcend"
+      },
+      {
+        "num": "4",
+        "hint": "屈尊",
+        "qid": "q4",
+        "answer": "condescend"
+      },
+      {
+        "num": "5",
+        "hint": "下降",
+        "qid": "q5",
+        "answer": "descent"
+      }
+    ]
+  },
+  {
+    "unit": 26,
+    "h2": "單元26：【吃】-vor- / -ed-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "devour",
+        "pos": "v.",
+        "cn": ") 吞噬",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "voracious",
+        "pos": "adj.",
+        "cn": ") 貪吃的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "edible",
+        "pos": "adj.",
+        "cn": ") 可食用的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "consume",
+        "pos": "v.",
+        "cn": ") 消耗",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "ingest",
+        "pos": "v.",
+        "cn": ") 攝取",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "devour",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "edible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inedible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "ingest",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "吞噬",
+        "qid": "q1",
+        "answer": "devour"
+      },
+      {
+        "num": "2",
+        "hint": "貪吃的",
+        "qid": "q2",
+        "answer": "voracious"
+      },
+      {
+        "num": "3",
+        "hint": "可食用的",
+        "qid": "q3",
+        "answer": "edible"
+      },
+      {
+        "num": "4",
+        "hint": "消耗",
+        "qid": "q4",
+        "answer": "consume"
+      },
+      {
+        "num": "5",
+        "hint": "攝取",
+        "qid": "q5",
+        "answer": "ingest"
+      }
+    ]
+  },
+  {
+    "unit": 27,
+    "h2": "單元27：【肉】-carn-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "carnivore",
+        "pos": "n.",
+        "cn": ") 肉食動物",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "carnival",
+        "pos": "n.",
+        "cn": ") 嘉年華",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incarnation",
+        "pos": "n.",
+        "cn": ") 化身",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "carcass",
+        "pos": "n.",
+        "cn": ") 屍體",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "reincarnate",
+        "pos": "v.",
+        "cn": ") 轉世",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "carnivore",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "carnival",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incarnation",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "carcass",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "肉食動物",
+        "qid": "q1",
+        "answer": "carnivores"
+      },
+      {
+        "num": "2",
+        "hint": "嘉年華",
+        "qid": "q2",
+        "answer": "carnival"
+      },
+      {
+        "num": "3",
+        "hint": "化身",
+        "qid": "q3",
+        "answer": "incarnation"
+      },
+      {
+        "num": "4",
+        "hint": "屍體",
+        "qid": "q4",
+        "answer": "carcass"
+      },
+      {
+        "num": "5",
+        "hint": "轉世",
+        "qid": "q5",
+        "answer": "reincarnate"
+      }
+    ]
+  },
+  {
+    "unit": 28,
+    "h2": "單元28：【感覺】-pass- / -path-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "passion",
+        "pos": "n.",
+        "cn": ") 熱情",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "compassion",
+        "pos": "n.",
+        "cn": ") 同情",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "sympathy",
+        "pos": "n.",
+        "cn": ") 憐憫",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "apathetic",
+        "pos": "adj.",
+        "cn": ") 冷漠的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "empathetic",
+        "pos": "adj.",
+        "cn": ") 同理的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "sympathize",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "passionate",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "apathetically",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "empathize",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "熱情",
+        "qid": "q1",
+        "answer": "passion"
+      },
+      {
+        "num": "2",
+        "hint": "同情",
+        "qid": "q2",
+        "answer": "compassion"
+      },
+      {
+        "num": "3",
+        "hint": "憐憫",
+        "qid": "q3",
+        "answer": "sympathy"
+      },
+      {
+        "num": "4",
+        "hint": "冷漠的",
+        "qid": "q4",
+        "answer": "apathetic"
+      },
+      {
+        "num": "5",
+        "hint": "同理的",
+        "qid": "q5",
+        "answer": "empathetic"
+      }
+    ]
+  },
+  {
+    "unit": 29,
+    "h2": "單元29：【居住】-habit-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "habit",
+        "pos": "n.",
+        "cn": ") 習慣",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "inhabit",
+        "pos": "v.",
+        "cn": ") 居住於",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habitat",
+        "pos": "n.",
+        "cn": ") 棲息地",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habitation",
+        "pos": "n.",
+        "cn": ") 居住",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "cohabit",
+        "pos": "v.",
+        "cn": ") 同居",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "habit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habitat",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habitation",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "habituate",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "習慣",
+        "qid": "q1",
+        "answer": "habit"
+      },
+      {
+        "num": "2",
+        "hint": "居住於",
+        "qid": "q2",
+        "answer": "inhabit"
+      },
+      {
+        "num": "3",
+        "hint": "棲息地",
+        "qid": "q3",
+        "answer": "habitat"
+      },
+      {
+        "num": "4",
+        "hint": "居住",
+        "qid": "q4",
+        "answer": "habitation"
+      },
+      {
+        "num": "5",
+        "hint": "同居",
+        "qid": "q5",
+        "answer": "cohabit"
+      }
+    ]
+  },
+  {
+    "unit": 30,
+    "h2": "單元30：【說】-logue- / -loqu-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "monologue",
+        "pos": "n.",
+        "cn": ") 獨白",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "eloquent",
+        "pos": "adj.",
+        "cn": ") 雄辯的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "colloquial",
+        "pos": "adj.",
+        "cn": ") 口語的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "soliloquy",
+        "pos": "n.",
+        "cn": ") 獨白劇",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "interlocutor",
+        "pos": "n.",
+        "cn": ") 對話者",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "monologue",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "eloquent",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "colloquial",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "soliloquy",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "獨白",
+        "qid": "q1",
+        "answer": "monologue"
+      },
+      {
+        "num": "2",
+        "hint": "雄辯的",
+        "qid": "q2",
+        "answer": "eloquent"
+      },
+      {
+        "num": "3",
+        "hint": "口語的",
+        "qid": "q3",
+        "answer": "colloquial"
+      },
+      {
+        "num": "4",
+        "hint": "獨白劇",
+        "qid": "q4",
+        "answer": "soliloquy"
+      },
+      {
+        "num": "5",
+        "hint": "對話者",
+        "qid": "q5",
+        "answer": "interlocutor"
+      }
+    ]
+  },
+  {
+    "unit": 31,
+    "h2": "單元31：【單一】-mono-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "monopoly",
+        "pos": "n.",
+        "cn": ") 獨占",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monologue",
+        "pos": "n.",
+        "cn": ") 獨白",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monotone",
+        "pos": "adj.",
+        "cn": ") 單調的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monarch",
+        "pos": "n.",
+        "cn": ") 君主",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monograph",
+        "pos": "n.",
+        "cn": ") 專著",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "monopoly",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monotony",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monarch",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monograph",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "獨占",
+        "qid": "q1",
+        "answer": "monopoly"
+      },
+      {
+        "num": "2",
+        "hint": "獨白",
+        "qid": "q2",
+        "answer": "monologue"
+      },
+      {
+        "num": "3",
+        "hint": "單調的",
+        "qid": "q3",
+        "answer": "monotone"
+      },
+      {
+        "num": "4",
+        "hint": "君主",
+        "qid": "q4",
+        "answer": "monarch"
+      },
+      {
+        "num": "5",
+        "hint": "專著",
+        "qid": "q5",
+        "answer": "monograph"
+      }
+    ]
+  },
+  {
+    "unit": 32,
+    "h2": "單元32：【單一】-mono- (PART 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "monopoly",
+        "pos": "n.",
+        "cn": ") 獨占",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monogamy",
+        "pos": "n.",
+        "cn": ") 一夫一妻制",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monochromatic",
+        "pos": "adj.",
+        "cn": ") 單色的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monologue",
+        "pos": "n.",
+        "cn": ") 獨白",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monotone",
+        "pos": "adj.",
+        "cn": ") 單調的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "monopoly",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monotony",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monarch",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "monograph",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "獨占",
+        "qid": "q1",
+        "answer": "monopoly"
+      },
+      {
+        "num": "2",
+        "hint": "一夫一妻制",
+        "qid": "q2",
+        "answer": "monogamy"
+      },
+      {
+        "num": "3",
+        "hint": "單色的",
+        "qid": "q3",
+        "answer": "monochromatic"
+      },
+      {
+        "num": "4",
+        "hint": "獨白",
+        "qid": "q4",
+        "answer": "monologue"
+      },
+      {
+        "num": "5",
+        "hint": "單調的",
+        "qid": "q5",
+        "answer": "monotone"
+      }
+    ]
+  },
+  {
+    "unit": 33,
+    "h2": "單元33：【大聲說】-claim-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "claim",
+        "pos": "v.",
+        "cn": ") 主張",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "exclaim",
+        "pos": "v.",
+        "cn": ") 驚呼",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "acclaim",
+        "pos": "v.",
+        "cn": "/n.) 讚揚",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "reclaim",
+        "pos": "v.",
+        "cn": ") 取回",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proclaim",
+        "pos": "v.",
+        "cn": ") 宣布",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "claim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "exclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "acclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "主張",
+        "qid": "q1",
+        "answer": "claims"
+      },
+      {
+        "num": "2",
+        "hint": "驚呼",
+        "qid": "q2",
+        "answer": "exclaim"
+      },
+      {
+        "num": "3",
+        "hint": "讚揚",
+        "qid": "q3",
+        "answer": "acclaim"
+      },
+      {
+        "num": "4",
+        "hint": "宣布",
+        "qid": "q4",
+        "answer": "proclaim"
+      },
+      {
+        "num": "5",
+        "hint": "取回",
+        "qid": "q5",
+        "answer": "reclaim"
+      }
+    ]
+  },
+  {
+    "unit": 34,
+    "h2": "單元34：【說話】-nounce-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "announce",
+        "pos": "v.",
+        "cn": ") 宣布",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "renounce",
+        "pos": "v.",
+        "cn": ") 放棄",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "denounce",
+        "pos": "v.",
+        "cn": ") 譴責",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pronounce",
+        "pos": "v.",
+        "cn": ") 發音",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "noun",
+        "pos": "n.",
+        "cn": ") 名詞",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "announce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "renounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "denounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pronounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "宣布",
+        "qid": "q1",
+        "answer": "announce"
+      },
+      {
+        "num": "2",
+        "hint": "放棄",
+        "qid": "q2",
+        "answer": "renounce"
+      },
+      {
+        "num": "3",
+        "hint": "譴責",
+        "qid": "q3",
+        "answer": "denounce"
+      },
+      {
+        "num": "4",
+        "hint": "發音",
+        "qid": "q4",
+        "answer": "pronounce"
+      },
+      {
+        "num": "5",
+        "hint": "名詞",
+        "qid": "q5",
+        "answer": "noun"
+      }
+    ]
+  },
+  {
+    "unit": 35,
+    "h2": "單元35：【水】-aqua-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "aquarium",
+        "pos": "n.",
+        "cn": ") 水族館",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquatic",
+        "pos": "adj.",
+        "cn": ") 水生的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqueduct",
+        "pos": "n.",
+        "cn": ") 輸水道",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "subaquatic",
+        "pos": "adj.",
+        "cn": ") 水下的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqueous",
+        "pos": "adj.",
+        "cn": ") 水的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "aquamarine",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquarelle",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqua",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquifer",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "水族館",
+        "qid": "q1",
+        "answer": "aquarium"
+      },
+      {
+        "num": "2",
+        "hint": "水生的",
+        "qid": "q2",
+        "answer": "aquatic"
+      },
+      {
+        "num": "3",
+        "hint": "輸水道",
+        "qid": "q3",
+        "answer": "aqueduct"
+      },
+      {
+        "num": "4",
+        "hint": "水下的",
+        "qid": "q4",
+        "answer": "subaquatic"
+      },
+      {
+        "num": "5",
+        "hint": "水的",
+        "qid": "q5",
+        "answer": "aqueous"
+      }
+    ]
+  },
+  {
+    "unit": 36,
+    "h2": "單元36：【打擊】-bat- / -beat-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "batter",
+        "pos": "v.",
+        "cn": "/n.) 猛打",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "battle",
+        "pos": "n.",
+        "cn": ") 戰役",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "combat",
+        "pos": "v.",
+        "cn": ") 戰鬥",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "debate",
+        "pos": "n.",
+        "cn": ") 辯論",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "rebate",
+        "pos": "n.",
+        "cn": ") 折扣",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "batter",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "battle",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "combat",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "debate",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "猛打",
+        "qid": "q1",
+        "answer": "batter"
+      },
+      {
+        "num": "2",
+        "hint": "戰役",
+        "qid": "q2",
+        "answer": "battle"
+      },
+      {
+        "num": "3",
+        "hint": "戰鬥",
+        "qid": "q3",
+        "answer": "combat"
+      },
+      {
+        "num": "4",
+        "hint": "辯論",
+        "qid": "q4",
+        "answer": "debate"
+      },
+      {
+        "num": "5",
+        "hint": "折扣",
+        "qid": "q5",
+        "answer": "rebate"
+      }
+    ]
+  },
+  {
+    "unit": 37,
+    "h2": "單元37：【破裂】-rupt-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "erupt",
+        "pos": "v.",
+        "cn": ") 爆發",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "interrupt",
+        "pos": "v.",
+        "cn": ") 打斷",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "rupture",
+        "pos": "v.",
+        "cn": "/n.) 破裂",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "disrupt",
+        "pos": "v.",
+        "cn": ") 擾亂",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "bankrupt",
+        "pos": "adj.",
+        "cn": ") 破產的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "erupt",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "interrupt",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "rupture",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "disrupt",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "打斷",
+        "qid": "q1",
+        "answer": "interrupt"
+      },
+      {
+        "num": "2",
+        "hint": "破裂",
+        "qid": "q2",
+        "answer": "rupture"
+      },
+      {
+        "num": "3",
+        "hint": "爆發",
+        "qid": "q3",
+        "answer": "erupt"
+      },
+      {
+        "num": "4",
+        "hint": "擾亂",
+        "qid": "q4",
+        "answer": "disrupt"
+      },
+      {
+        "num": "5",
+        "hint": "破產的",
+        "qid": "q5",
+        "answer": "bankrupt"
+      }
+    ]
+  },
+  {
+    "unit": 38,
+    "h2": "單元38：【破裂】-rupt- (PART 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "erupt",
+        "pos": "v.",
+        "cn": ") 爆發",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "bankrupt",
+        "pos": "adj.",
+        "cn": ") 破產",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "abrupt",
+        "pos": "adj.",
+        "cn": ") 突然的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "突然",
+        "qid": "q1",
+        "answer": "abruptly"
+      },
+      {
+        "num": "2",
+        "hint": "破裂",
+        "qid": "q2",
+        "answer": "rupture"
+      },
+      {
+        "num": "3",
+        "hint": "破產",
+        "qid": "q3",
+        "answer": "bankrupt"
+      },
+      {
+        "num": "4",
+        "hint": "爆發",
+        "qid": "q4",
+        "answer": "erupt"
+      },
+      {
+        "num": "5",
+        "hint": "打斷",
+        "qid": "q5",
+        "answer": "interrupt"
+      }
+    ]
+  },
+  {
+    "unit": 39,
+    "h2": "單元39：【無】-un- / -in-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "unhappy",
+        "pos": "adj.",
+        "cn": ") 不快樂",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "invisible",
+        "pos": "adj.",
+        "cn": ") 看不見的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impossible",
+        "pos": "adj.",
+        "cn": ") 不可能的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "illegal",
+        "pos": "adj.",
+        "cn": ") 非法的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "nonstop",
+        "pos": "adj.",
+        "cn": "/adv.) 不停的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "visible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "possible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "legal",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "balance",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "不快樂",
+        "qid": "q1",
+        "answer": "unhappy"
+      },
+      {
+        "num": "2",
+        "hint": "看不見的",
+        "qid": "q2",
+        "answer": "invisible"
+      },
+      {
+        "num": "3",
+        "hint": "不可能的",
+        "qid": "q3",
+        "answer": "impossible"
+      },
+      {
+        "num": "4",
+        "hint": "非法的",
+        "qid": "q4",
+        "answer": "illegal"
+      },
+      {
+        "num": "5",
+        "hint": "不停的",
+        "qid": "q5",
+        "answer": "nonstop"
+      }
+    ]
+  },
+  {
+    "unit": 40,
+    "h2": "單元40：【無】-un- / -in- (PART 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "unreal",
+        "pos": "adj.",
+        "cn": ") 不真實的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "insane",
+        "pos": "adj.",
+        "cn": ") 瘋狂的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dishonest",
+        "pos": "adj.",
+        "cn": ") 不誠實的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impatient",
+        "pos": "adj.",
+        "cn": ") 不耐煩的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "mislead",
+        "pos": "v.",
+        "cn": ") 誤導",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "impossible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "unfair",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "dislike",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "misunderstand",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "不真實的",
+        "qid": "q1",
+        "answer": "unreal"
+      },
+      {
+        "num": "2",
+        "hint": "瘋狂的",
+        "qid": "q2",
+        "answer": "insane"
+      },
+      {
+        "num": "3",
+        "hint": "不誠實的",
+        "qid": "q3",
+        "answer": "dishonest"
+      },
+      {
+        "num": "4",
+        "hint": "不耐煩的",
+        "qid": "q4",
+        "answer": "impatient"
+      },
+      {
+        "num": "5",
+        "hint": "誤導",
+        "qid": "q5",
+        "answer": "mislead"
+      }
+    ]
+  },
+  {
+    "unit": 41,
+    "h2": "單元41：【知道】-not-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "note",
+        "pos": "n.",
+        "cn": ") 筆記",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notable",
+        "pos": "adj.",
+        "cn": ") 顯著的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notion",
+        "pos": "n.",
+        "cn": ") 概念",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notify",
+        "pos": "v.",
+        "cn": ") 通知",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "annotation",
+        "pos": "n.",
+        "cn": ") 註解",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "knowledge",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "known",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notify",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notable",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "筆記",
+        "qid": "q1",
+        "answer": "note"
+      },
+      {
+        "num": "2",
+        "hint": "顯著的",
+        "qid": "q2",
+        "answer": "notable"
+      },
+      {
+        "num": "3",
+        "hint": "概念",
+        "qid": "q3",
+        "answer": "notion"
+      },
+      {
+        "num": "4",
+        "hint": "通知",
+        "qid": "q4",
+        "answer": "notify"
+      },
+      {
+        "num": "5",
+        "hint": "註解",
+        "qid": "q5",
+        "answer": "annotation"
+      }
+    ]
+  },
+  {
+    "unit": 42,
+    "h2": "單元42：【相信】-cred-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "credit",
+        "pos": "n.",
+        "cn": ") 信用",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "credible",
+        "pos": "adj.",
+        "cn": ") 可信的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incredible",
+        "pos": "adj.",
+        "cn": ") 不可思議的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "credentials",
+        "pos": "n.",
+        "cn": ") 證書",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "credit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incredible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "belief",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "discredit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "相信",
+        "qid": "q1",
+        "answer": "trust"
+      },
+      {
+        "num": "2",
+        "hint": "可信的",
+        "qid": "q2",
+        "answer": "credible"
+      },
+      {
+        "num": "3",
+        "hint": "不可思議的",
+        "qid": "q3",
+        "answer": "incredible"
+      },
+      {
+        "num": "4",
+        "hint": "信用",
+        "qid": "q4",
+        "answer": "credit"
+      },
+      {
+        "num": "5",
+        "hint": "證書",
+        "qid": "q5",
+        "answer": "credentials"
+      }
+    ]
+  },
+  {
+    "unit": 43,
+    "h2": "單元43：【大聲說】-claim-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "claim",
+        "pos": "v.",
+        "cn": ") 主張",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "acclaim",
+        "pos": "v.",
+        "cn": "/n.) 讚揚",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proclaim",
+        "pos": "v.",
+        "cn": ") 宣布",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "reclaim",
+        "pos": "v.",
+        "cn": ") 取回",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "exclaim",
+        "pos": "v.",
+        "cn": ") 驚呼",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "claim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "proclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "reclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "acclaim",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "主張",
+        "qid": "q1",
+        "answer": "claims"
+      },
+      {
+        "num": "2",
+        "hint": "驚呼",
+        "qid": "q2",
+        "answer": "exclaim"
+      },
+      {
+        "num": "3",
+        "hint": "宣布",
+        "qid": "q3",
+        "answer": "proclaim"
+      },
+      {
+        "num": "4",
+        "hint": "取回",
+        "qid": "q4",
+        "answer": "reclaim"
+      },
+      {
+        "num": "5",
+        "hint": "讚揚",
+        "qid": "q5",
+        "answer": "acclaim"
+      }
+    ]
+  },
+  {
+    "unit": 44,
+    "h2": "單元44：【說話】-nounce-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "announce",
+        "pos": "v.",
+        "cn": ") 宣布",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "denounce",
+        "pos": "v.",
+        "cn": ") 譴責",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pronounce",
+        "pos": "v.",
+        "cn": ") 發音",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "renounce",
+        "pos": "v.",
+        "cn": ") 放棄",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "noun",
+        "pos": "n.",
+        "cn": ") 名詞",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "announce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "denounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "pronounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "renounce",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "宣布",
+        "qid": "q1",
+        "answer": "announce"
+      },
+      {
+        "num": "2",
+        "hint": "譴責",
+        "qid": "q2",
+        "answer": "denounce"
+      },
+      {
+        "num": "3",
+        "hint": "發音",
+        "qid": "q3",
+        "answer": "pronounce"
+      },
+      {
+        "num": "4",
+        "hint": "放棄",
+        "qid": "q4",
+        "answer": "renounce"
+      },
+      {
+        "num": "5",
+        "hint": "名詞",
+        "qid": "q5",
+        "answer": "noun"
+      }
+    ]
+  },
+  {
+    "unit": 45,
+    "h2": "單元45：【水】-aqua-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "aquatic",
+        "pos": "adj.",
+        "cn": ") 水生的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquarium",
+        "pos": "n.",
+        "cn": ") 水族館",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqueduct",
+        "pos": "n.",
+        "cn": ") 輸水道",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqueous",
+        "pos": "adj.",
+        "cn": ") 水的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "subaquatic",
+        "pos": "adj.",
+        "cn": ") 水下的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "aquatic",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquarium",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aqueduct",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "aquifer",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "水族館",
+        "qid": "q1",
+        "answer": "aquarium"
+      },
+      {
+        "num": "2",
+        "hint": "水生的",
+        "qid": "q2",
+        "answer": "aquatic"
+      },
+      {
+        "num": "3",
+        "hint": "輸水道",
+        "qid": "q3",
+        "answer": "aqueduct"
+      },
+      {
+        "num": "4",
+        "hint": "水的",
+        "qid": "q4",
+        "answer": "aqueous"
+      },
+      {
+        "num": "5",
+        "hint": "水下的",
+        "qid": "q5",
+        "answer": "subaquatic"
+      }
+    ]
+  },
+  {
+    "unit": 46,
+    "h2": "單元46：【打擊】-bat-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "batter",
+        "pos": "v.",
+        "cn": "/n.) 猛打",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "battle",
+        "pos": "n.",
+        "cn": ") 戰役",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "combat",
+        "pos": "v.",
+        "cn": ") 戰鬥",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "猛打",
+        "qid": "q1",
+        "answer": "batter"
+      },
+      {
+        "num": "2",
+        "hint": "戰役",
+        "qid": "q2",
+        "answer": "battle"
+      }
+    ]
+  },
+  {
+    "unit": 47,
+    "h2": "單元47：【無】-un- / -in-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "unknown",
+        "pos": "adj.",
+        "cn": ") 未知的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "unlike",
+        "pos": "adj.",
+        "cn": "/prep.) 不像",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incomplete",
+        "pos": "adj.",
+        "cn": ") 不完整的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "impossible",
+        "pos": "adj.",
+        "cn": ") 不可能的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "illegal",
+        "pos": "adj.",
+        "cn": ") 非法的",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "unknown",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "unlike",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incomplete",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "illegal",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "未知的",
+        "qid": "q1",
+        "answer": "unknown"
+      },
+      {
+        "num": "2",
+        "hint": "不像",
+        "qid": "q2",
+        "answer": "unlike"
+      },
+      {
+        "num": "3",
+        "hint": "不完整的",
+        "qid": "q3",
+        "answer": "incomplete"
+      },
+      {
+        "num": "4",
+        "hint": "不可能的",
+        "qid": "q4",
+        "answer": "impossible"
+      },
+      {
+        "num": "5",
+        "hint": "非法的",
+        "qid": "q5",
+        "answer": "illegal"
+      }
+    ]
+  },
+  {
+    "unit": 48,
+    "h2": "單元48：【知道】-not-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "note",
+        "pos": "n.",
+        "cn": ") 筆記",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notify",
+        "pos": "v.",
+        "cn": ") 通知",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notion",
+        "pos": "n.",
+        "cn": ") 概念",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notable",
+        "pos": "adj.",
+        "cn": ") 顯著的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "annotation",
+        "pos": "n.",
+        "cn": ") 註解",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "notice",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notion",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "notable",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "annotate",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "筆記",
+        "qid": "q1",
+        "answer": "note"
+      },
+      {
+        "num": "2",
+        "hint": "通知",
+        "qid": "q2",
+        "answer": "notify"
+      },
+      {
+        "num": "3",
+        "hint": "概念",
+        "qid": "q3",
+        "answer": "notion"
+      },
+      {
+        "num": "4",
+        "hint": "顯著的",
+        "qid": "q4",
+        "answer": "notable"
+      },
+      {
+        "num": "5",
+        "hint": "註解",
+        "qid": "q5",
+        "answer": "annotation"
+      }
+    ]
+  },
+  {
+    "unit": 49,
+    "h2": "單元49：【相信】-cred-",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "credit",
+        "pos": "n.",
+        "cn": ") 信用",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "credible",
+        "pos": "adj.",
+        "cn": ") 可信的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incredible",
+        "pos": "adj.",
+        "cn": ") 不可思議的",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "credentials",
+        "pos": "n.",
+        "cn": ") 證書",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "creditor",
+        "pos": "n.",
+        "cn": ") 債權人",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [
+      {
+        "word": "credit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "incredible",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "belief",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "discredit",
+        "pos": "",
+        "cn": "",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "信用",
+        "qid": "q1",
+        "answer": "credit"
+      },
+      {
+        "num": "2",
+        "hint": "可信的",
+        "qid": "q2",
+        "answer": "credible"
+      },
+      {
+        "num": "3",
+        "hint": "不可思議的",
+        "qid": "q3",
+        "answer": "incredible"
+      },
+      {
+        "num": "4",
+        "hint": "債權人",
+        "qid": "q4",
+        "answer": "creditor"
+      },
+      {
+        "num": "5",
+        "hint": "證書",
+        "qid": "q5",
+        "answer": "credentials"
+      }
+    ]
+  },
+  {
+    "unit": 50,
+    "h2": "單元50：【相信】-cred- (PART 2)",
+    "yt_url": null,
+    "core": [
+      {
+        "word": "credit",
+        "pos": "n.",
+        "cn": ") 信用",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "accredit",
+        "pos": "v.",
+        "cn": ") 認可",
+        "sentence": "",
+        "cn_sentence": ""
+      },
+      {
+        "word": "discredit",
+        "pos": "v.",
+        "cn": ") 使不信",
+        "sentence": "",
+        "cn_sentence": ""
+      }
+    ],
+    "bonus": [],
+    "quiz": [
+      {
+        "num": "1",
+        "hint": "認可",
+        "qid": "q1",
+        "answer": "accredit"
+      },
+      {
+        "num": "2",
+        "hint": "使不信",
+        "qid": "q2",
+        "answer": "discredit"
+      }
+    ]
+  }
+]
