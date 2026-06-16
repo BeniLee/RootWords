@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>英文單字字根學習單 v2 - 導航首頁</title>
+    <title>英文單字字根學習單 - 導航首頁</title>
     <style>
         * {
             margin: 0;
@@ -60,7 +60,7 @@
             border-radius: 6px;
             border: 1px solid #93c5fd;
             background-color: #ffffff;
-            color: #1e293b;
+            color: #1f2937;
             cursor: pointer;
             outline: none;
             appearance: auto;
@@ -95,7 +95,7 @@
 </head>
 <body>
     <nav>
-        <div class="nav-title">📚 英文單字字根學習單 v2</div>
+        <div class="nav-title">📚 英文單字字根學習單（導覽模式）</div>
         <div class="nav-controls">
             <label for="unit-select">選擇單元：</label>
             <select id="unit-select">
@@ -150,6 +150,7 @@
                 <option value="unit49.html">單元 49</option>
                 <option value="unit50.html" selected>單元 50</option>
             </select>
+
             <button onclick="prevUnit()">⬅ 上一個</button>
             <button onclick="nextUnit()">下一個 ➡</button>
 
@@ -164,15 +165,9 @@
         const select = document.getElementById('unit-select');
         const iframe = document.getElementById('content-frame');
 
-        // 選單改變時直接切換
         select.addEventListener('change', function () {
             iframe.src = this.value;
         });
-
-        // 「前往」按鈕（與選單 change 效果相同，保留按鈕給習慣點擊的使用者）
-        function goToUnit() {
-            iframe.src = select.value;
-        }
 
         function prevUnit() {
             const idx = select.selectedIndex;
@@ -200,10 +195,9 @@
             }
         }
 
-        // 鍵盤快速鍵：Enter 直接前往
         select.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
-                goToUnit();
+                iframe.src = select.value;
             }
         });
     </script>
