@@ -74,7 +74,13 @@
     </div>
     <script>
         function speak(text) { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const msg = new SpeechSynthesisUtterance(); msg.text = text; msg.lang = 'en-US'; msg.rate = 0.9; window.speechSynthesis.speak(msg); } else { alert("瀏覽器不支援語音發音功能。"); } }
-        const answers = { q1: "ventilate", q2: "invent", q3: "venture", q4: "adventure", q5: "preventive" };
+        const answers = {
+  q1: "invent",
+  q2: "adventure",
+  q3: "venture",
+  q4: "ventilate",
+  q5: "preventive",
+};
         function checkAnswers() { let correctCount = 0; const totalQuestions = Object.keys(answers).length; for (let id in answers) { const inputElement = document.getElementById(id); const userAnswer = inputElement.value.trim().toLowerCase(); inputElement.classList.remove('correct', 'incorrect'); if (userAnswer === answers[id]) { inputElement.classList.add('correct'); correctCount++; } else { if (userAnswer !== "") inputElement.classList.add('incorrect'); } } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600'); if (correctCount === totalQuestions) { resultMsg.innerText = "🎉 太棒了！全部答對！"; resultMsg.classList.add('text-green-600'); } else { resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！`; resultMsg.classList.add('text-red-600'); } }
         function showAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = answers[id]; inputElement.classList.remove('incorrect'); inputElement.classList.add('correct'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-red-600'); resultMsg.classList.add('text-green-600'); resultMsg.innerText = "✨ 已經為您顯示正確答案。"; }
         function clearAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = ""; inputElement.classList.remove('correct', 'incorrect'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.add('hidden'); }
