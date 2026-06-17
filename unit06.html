@@ -44,19 +44,24 @@
                 <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center"><span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰</h3>
                 <p class="mb-6 text-gray-700 font-medium">請閱讀短文，依提示填寫單字。</p>
                 <div class="text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
-                    He will 
+                    As a writer, I like to
                     <span class="blank-wrapper"><span class="blank-hint">1. 描述</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
-                    the event in a 
+                    beautiful places in my stories. Last year, I sent my first
                     <span class="blank-wrapper"><span class="blank-hint">2. 手稿</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
-                    . The rules 
+                    to a publisher. However, a strict rule tried to
                     <span class="blank-wrapper"><span class="blank-hint">3. 限制</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
-                    what we can do. She likes to 
-                    <span class="blank-wrapper"><span class="blank-hint">4. 訂閱</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
-                    magazines. The doctor will 
-                    <span class="blank-wrapper"><span class="blank-hint">5. 開處方</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
-                    rest. Please 
-                    <span class="blank-wrapper"><span class="blank-hint">6. 謄寫</span><input type="text" id="q6" class="input-box" autocomplete="off"></span>
-                    this note.
+                    my ideas. I was so stressed that the doctor had to
+                    <span class="blank-wrapper"><span class="blank-hint">4. 開處方</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
+                    some medicine for me. Later, I asked a friend to
+                    <span class="blank-wrapper"><span class="blank-hint">5. 謄寫</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
+                    my interviews into text. Finally, my book was published! Many people
+                    <span class="blank-wrapper"><span class="blank-hint">6. 訂閱</span><input type="text" id="q6" class="input-box" autocomplete="off"></span>
+                    to my blog now. I even
+                    <span class="blank-wrapper"><span class="blank-hint">7. 題寫</span><input type="text" id="q7" class="input-box" autocomplete="off"></span>
+                    my name on the books for my fans. Please don't
+                    <span class="blank-wrapper"><span class="blank-hint">8. 亂寫</span><input type="text" id="q8" class="input-box" autocomplete="off"></span>
+                    on them!
+
                 </div>
                 <div class="mt-8 flex flex-wrap gap-4">
                     <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
@@ -79,7 +84,7 @@
     </div>
     <script>
         function speak(text) { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const msg = new SpeechSynthesisUtterance(); msg.text = text; msg.lang = 'en-US'; msg.rate = 0.9; window.speechSynthesis.speak(msg); } else { alert("瀏覽器不支援語音發音功能。"); } }
-        const answers = { q1: "describe", q2: "manuscript", q3: "circumscribe", q4: "subscribe", q5: "prescribe", q6: "transcribe" };
+        const answers = { q1: "describe", q2: "manuscript", q3: "circumscribe", q4: "prescribe", q5: "transcribe", q6: "subscribe", q7: "inscribe", q8: "scribble" };
         function checkAnswers() { let correctCount = 0; const totalQuestions = Object.keys(answers).length; for (let id in answers) { const inputElement = document.getElementById(id); const userAnswer = inputElement.value.trim().toLowerCase(); inputElement.classList.remove('correct', 'incorrect'); if (userAnswer === answers[id]) { inputElement.classList.add('correct'); correctCount++; } else { if (userAnswer !== "") inputElement.classList.add('incorrect'); } } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600'); if (correctCount === totalQuestions) { resultMsg.innerText = "🎉 太棒了！全部答對！"; resultMsg.classList.add('text-green-600'); } else { resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！`; resultMsg.classList.add('text-red-600'); } }
         function showAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = answers[id]; inputElement.classList.remove('incorrect'); inputElement.classList.add('correct'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-red-600'); resultMsg.classList.add('text-green-600'); resultMsg.innerText = "✨ 已經為您顯示正確答案。"; }
         function clearAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = ""; inputElement.classList.remove('correct', 'incorrect'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.add('hidden'); }

@@ -44,19 +44,24 @@
                 <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center"><span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰</h3>
                 <p class="mb-6 text-gray-700 font-medium">請閱讀短文，依提示填寫單字。</p>
                 <div class="text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
-                    The teacher will 
-                    <span class="blank-wrapper"><span class="blank-hint">1. 驅逐</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
-                    the noisy student. The ship will 
-                    <span class="blank-wrapper"><span class="blank-hint">2. 推進</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
-                    forward. The strong wall can 
-                    <span class="blank-wrapper"><span class="blank-hint">3. 擊退</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
-                    enemies. He made an 
-                    <span class="blank-wrapper"><span class="blank-hint">4. 衝動</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
-                    purchase. The rule will 
-                    <span class="blank-wrapper"><span class="blank-hint">5. 迫使</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
-                    compliance. Wearing a helmet is 
-                    <span class="blank-wrapper"><span class="blank-hint">6. 強制的</span><input type="text" id="q6" class="input-box" autocomplete="off"></span>
-                    .
+                    The space hero was on a mission. He carried a
+                    <span class="blank-wrapper"><span class="blank-hint">1. 可攜帶的</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
+                    shield that could
+                    <span class="blank-wrapper"><span class="blank-hint">2. 擊退</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
+                    any attack. Strong engines helped
+                    <span class="blank-wrapper"><span class="blank-hint">3. 推進</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
+                    his spaceship through the stars. Suddenly, a bad guy tried to
+                    <span class="blank-wrapper"><span class="blank-hint">4. 迫使</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
+                    him to give up. The hero had a sudden
+                    <span class="blank-wrapper"><span class="blank-hint">5. 衝動</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
+                    to fight back. He managed to
+                    <span class="blank-wrapper"><span class="blank-hint">6. 驅逐</span><input type="text" id="q6" class="input-box" autocomplete="off"></span>
+                    the bad guy from the ship. It is a
+                    <span class="blank-wrapper"><span class="blank-hint">7. 強制的</span><input type="text" id="q7" class="input-box" autocomplete="off"></span>
+                    rule to keep the ship safe. Eventually, the space police arrived to
+                    <span class="blank-wrapper"><span class="blank-hint">8. 驅逐出境</span><input type="text" id="q8" class="input-box" autocomplete="off"></span>
+                    the criminal back to his planet.
+
                 </div>
                 <div class="mt-8 flex flex-wrap gap-4">
                     <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
@@ -79,7 +84,7 @@
     </div>
     <script>
         function speak(text) { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const msg = new SpeechSynthesisUtterance(); msg.text = text; msg.lang = 'en-US'; msg.rate = 0.9; window.speechSynthesis.speak(msg); } else { alert("瀏覽器不支援語音發音功能。"); } }
-        const answers = { q1: "expel", q2: "propel", q3: "repel", q4: "impulse", q5: "compel", q6: "compulsory" };
+        const answers = { q1: "portable", q2: "repel", q3: "propel", q4: "compel", q5: "impulse", q6: "expel", q7: "compulsory", q8: "deport" };
         function checkAnswers() { let correctCount = 0; const totalQuestions = Object.keys(answers).length; for (let id in answers) { const inputElement = document.getElementById(id); const userAnswer = inputElement.value.trim().toLowerCase(); inputElement.classList.remove('correct', 'incorrect'); if (userAnswer === answers[id]) { inputElement.classList.add('correct'); correctCount++; } else { if (userAnswer !== "") inputElement.classList.add('incorrect'); } } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600'); if (correctCount === totalQuestions) { resultMsg.innerText = "🎉 太棒了！全部答對！"; resultMsg.classList.add('text-green-600'); } else { resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！`; resultMsg.classList.add('text-red-600'); } }
         function showAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = answers[id]; inputElement.classList.remove('incorrect'); inputElement.classList.add('correct'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-red-600'); resultMsg.classList.add('text-green-600'); resultMsg.innerText = "✨ 已經為您顯示正確答案。"; }
         function clearAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = ""; inputElement.classList.remove('correct', 'incorrect'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.add('hidden'); }
