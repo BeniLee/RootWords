@@ -41,24 +41,8 @@
                 <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center"><span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰</h3>
                 <p class="mb-6 text-gray-700 font-medium">請閱讀短文，依提示填寫單字。</p>
                 <div class="text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
-                    They will 
-                    <span class="blank-wrapper"><span class="blank-hint">1. 宣布</span><input type="text" id="q1" class="input-box" autocomplete="off"></span>
-                    the holiday. He decided to 
-                    <span class="blank-wrapper"><span class="blank-hint">2. 放棄</span><input type="text" id="q2" class="input-box" autocomplete="off"></span>
-                    power. The crowd began to 
-                    <span class="blank-wrapper"><span class="blank-hint">3. 譴責</span><input type="text" id="q3" class="input-box" autocomplete="off"></span>
-                    crime. Please 
-                    <span class="blank-wrapper"><span class="blank-hint">4. 發音</span><input type="text" id="q4" class="input-box" autocomplete="off"></span>
-                    this phrase. This word is a 
-                    <span class="blank-wrapper"><span class="blank-hint">5. 名詞</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>
-                    .
-                </div>
-                <div class="mt-8 flex flex-wrap gap-4">
-                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
-                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
-                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
-                </div>
-                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+                    The mayor called a meeting to <span class="blank-wrapper"><span class="blank-hint">1. 宣布</span><input type="text" id="q1" class="input-box" autocomplete="off"></span> some big news. He decided to <span class="blank-wrapper"><span class="blank-hint">2. 放棄</span><input type="text" id="q2" class="input-box" autocomplete="off"></span> his power because he was too tired to work. Before leaving, he took the chance to <span class="blank-wrapper"><span class="blank-hint">3. 譴責</span><input type="text" id="q3" class="input-box" autocomplete="off"></span> the bad guys in the city. He tried to <span class="blank-wrapper"><span class="blank-hint">4. 發音</span><input type="text" id="q4" class="input-box" autocomplete="off"></span> their names clearly so everyone would know them. In English, his title &quot;mayor&quot; is a common <span class="blank-wrapper"><span class="blank-hint">5. 名詞</span><input type="text" id="q5" class="input-box" autocomplete="off"></span>.
+                </div><div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
             </section>
             <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
                 <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">👑 魔王加分題 (Bonus Words)</h3>
@@ -74,7 +58,13 @@
     </div>
     <script>
         function speak(text) { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const msg = new SpeechSynthesisUtterance(); msg.text = text; msg.lang = 'en-US'; msg.rate = 0.9; window.speechSynthesis.speak(msg); } else { alert("瀏覽器不支援語音發音功能。"); } }
-        const answers = { q1: "announce", q2: "renounce", q3: "denounce", q4: "pronounce", q5: "noun" };
+        const answers = {
+  q1: "announce",
+  q2: "renounce",
+  q3: "denounce",
+  q4: "pronounce",
+  q5: "noun",
+};;
         function checkAnswers() { let correctCount = 0; const totalQuestions = Object.keys(answers).length; for (let id in answers) { const inputElement = document.getElementById(id); const userAnswer = inputElement.value.trim().toLowerCase(); inputElement.classList.remove('correct', 'incorrect'); if (userAnswer === answers[id]) { inputElement.classList.add('correct'); correctCount++; } else { if (userAnswer !== "") inputElement.classList.add('incorrect'); } } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600'); if (correctCount === totalQuestions) { resultMsg.innerText = "🎉 太棒了！全部答對！"; resultMsg.classList.add('text-green-600'); } else { resultMsg.innerText = "💪 你答對了 " + correctCount + " / " + totalQuestions + " 題，再試試看！"; resultMsg.classList.add('text-red-600'); } }
         function showAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = answers[id]; inputElement.classList.remove('incorrect'); inputElement.classList.add('correct'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.remove('hidden', 'text-red-600'); resultMsg.classList.add('text-green-600'); resultMsg.innerText = "✨ 已經為您顯示正確答案。"; }
         function clearAnswers() { for (let id in answers) { const inputElement = document.getElementById(id); inputElement.value = ""; inputElement.classList.remove('correct', 'incorrect'); } const resultMsg = document.getElementById('result-msg'); resultMsg.classList.add('hidden'); }
