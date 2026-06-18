@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元23：【來】-ven-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8; /* 增加整體行距，讓版面看起來更舒服 */
+        }
+        /* 發音點擊的視覺回饋 */
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+        
+        /* 輸入框樣式 */
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        
+        /* 填空題複合結構：上方提示，下方輸入框 */
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem; /* 微調與下一行的距離 */
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        
+        <!-- 標題區 -->
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元二十三：【來】 -ven-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=dFf6cRlx6Cw" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+            <div class="p-6 md:p-8">
+            
+            <!-- 第一部分：核心單字 -->
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('convene')">
+                            <span class="text-2xl font-bold text-blue-700">convene</span>
+                            <span class="text-gray-500 ml-2">(v.) 集會</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The committee will convene next week.')">
+                            <p class="text-gray-700 font-medium">The committee will <span class="text-blue-600 font-bold">convene</span> next week.</p>
+                            <p class="text-gray-500 text-sm mt-1">委員會將於下週集會。</p>
+                        </div>
+                    </div>
+<div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('convention')">
+                            <span class="text-2xl font-bold text-blue-700">convention</span>
+                            <span class="text-gray-500 ml-2">(n.) 會議；慣例</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The convention attracted thousands of people.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">convention</span> attracted thousands of people.</p>
+                            <p class="text-gray-500 text-sm mt-1">這場會議吸引了數千人。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('conventional')">
+                            <span class="text-2xl font-bold text-blue-700">conventional</span>
+                            <span class="text-gray-500 ml-2">(adj.) 傳統的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She has very conventional views.')">
+                            <p class="text-gray-700 font-medium">She has very <span class="text-blue-600 font-bold">conventional</span> views.</p>
+                            <p class="text-gray-500 text-sm mt-1">她的觀點非常傳統。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('intervene')">
+                            <span class="text-2xl font-bold text-blue-700">intervene</span>
+                            <span class="text-gray-500 ml-2">(v.) 介入</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The teacher had to intervene in the fight.')">
+                            <p class="text-gray-700 font-medium">The teacher had to <span class="text-blue-600 font-bold">intervene</span> in the fight.</p>
+                            <p class="text-gray-500 text-sm mt-1">老師必須介入這場爭鬥。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('contravene')">
+                            <span class="text-2xl font-bold text-blue-700">contravene</span>
+                            <span class="text-gray-500 ml-2">(v.) 違反</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('This law contravenes human rights.')">
+                            <p class="text-gray-700 font-medium">This law <span class="text-blue-600 font-bold">contravenes</span> human rights.</p>
+                            <p class="text-gray-500 text-sm mt-1">這項法律違反人權。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('revenue')">
+                            <span class="text-2xl font-bold text-blue-700">revenue</span>
+                            <span class="text-gray-500 ml-2">(n.) 收入</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The company\'s revenue increased this year.')">
+                            <p class="text-gray-700 font-medium">The company's revenue increased this year.</p>
+                            <p class="text-gray-500 text-sm mt-1">公司今年的收入增加了。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('avenue')">
+                            <span class="text-2xl font-bold text-blue-700">avenue</span>
+                            <span class="text-gray-500 ml-2">(n.) 大道</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The parade went down the main avenue.')">
+                            <p class="text-gray-700 font-medium">The parade went down the main <span class="text-blue-600 font-bold">avenue</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">遊行沿著主要大道前進。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('venue')">
+                            <span class="text-2xl font-bold text-blue-700">venue</span>
+                            <span class="text-gray-500 ml-2">(n.) 地點</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The wedding venue was beautiful.')">
+                            <p class="text-gray-700 font-medium">The wedding <span class="text-blue-600 font-bold">venue</span> was beautiful.</p>
+                            <p class="text-gray-500 text-sm mt-1">婚禮場地很美。</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('tradition')">
+                            <span class="text-2xl font-bold text-blue-700">tradition</span>
+                            <span class="text-gray-500 ml-2">(n.) 傳統</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('It is a tradition to eat mooncakes.')">
+                            <p class="text-gray-700 font-medium">It is a tradition to eat mooncakes.</p>
+                            <p class="text-gray-500 text-sm mt-1">「吃月餅是一項傳統。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('intervention')">
+                            <span class="text-2xl font-bold text-blue-700">intervention</span>
+                            <span class="text-gray-500 ml-2">(n.) 介入</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The teacher\'s intervention stopped the fight.')">
+                            <p class="text-gray-700 font-medium">The teacher's intervention stopped the fight.</p>
+                            <p class="text-gray-500 text-sm mt-1">「老師的介入阻止了爭鬥。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('conventional')">
+                            <span class="text-2xl font-bold text-blue-700">conventional</span>
+                            <span class="text-gray-500 ml-2">(adj.) 傳統的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She has very conventional views on marriage.')">
+                            <p class="text-gray-700 font-medium">She has very conventional views on marriage.</p>
+                            <p class="text-gray-500 text-sm mt-1">「她對婚姻的看法很傳統。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('contravention')">
+                            <span class="text-2xl font-bold text-blue-700">contravention</span>
+                            <span class="text-gray-500 ml-2">(n.) 違反</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('He was fined for contravention of the rules.')">
+                            <p class="text-gray-700 font-medium">He was fined for contravention of the rules.</p>
+                            <p class="text-gray-500 text-sm mt-1">「他因違反規定而被罰款。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('revenue')">
+                            <span class="text-2xl font-bold text-blue-700">revenue</span>
+                            <span class="text-gray-500 ml-2">(n.) 收入</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The government relies on tax revenue.')">
+                            <p class="text-gray-700 font-medium">The government relies on tax revenue.</p>
+                            <p class="text-gray-500 text-sm mt-1">「政府依賴稅收。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('interfere')">
+                            <span class="text-2xl font-bold text-blue-700">interfere</span>
+                            <span class="text-gray-500 ml-2">(v.) 干涉</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Don\'t interfere in other people\'s business.')">
+                            <p class="text-gray-700 font-medium">Don't interfere in other people's business.</p>
+                            <p class="text-gray-500 text-sm mt-1">「不要干涉別人的事。」</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 第二部分：克漏字測驗 -->
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                
+                <!-- 測驗文本 (逐題條列) -->
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">1. 集會</span>
+                            <input type="text" id="q1" class="input-box" autocomplete="off">
+                        </span>
+                        The club will ________ every Friday.
+                    </p>
+                    <p>
+                        The annual 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">2. 會議</span>
+                            <input type="text" id="q2" class="input-box" autocomplete="off">
+                        </span>
+                        will be held in June.
+                    </p>
+                    <p>
+                        He prefers 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">3. 傳統的</span>
+                            <input type="text" id="q3" class="input-box" autocomplete="off">
+                        </span>
+                        methods of teaching.
+                    </p>
+                    <p>
+                        The police had to 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">4. 介入</span>
+                            <input type="text" id="q4" class="input-box" autocomplete="off">
+                        </span>
+                        in the dispute.
+                    </p>
+                    <p>
+                        His actions 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">5. 違反</span>
+                            <input type="text" id="q5" class="input-box" autocomplete="off">
+                        </span>
+                        the company's policy.
+                    </p>
+                    <p>
+                        The government's 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">6. 收入</span>
+                            <input type="text" id="q6" class="input-box" autocomplete="off">
+                        </span>
+                        comes from taxes.
+                    </p>
+                    <p>
+                        We walked down a beautiful tree-lined 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">7. 大道</span>
+                            <input type="text" id="q7" class="input-box" autocomplete="off">
+                        </span>
+                        .
+                    </p>
+                    <p>
+                        The concert 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">8. 地點</span>
+                            <input type="text" id="q8" class="input-box" autocomplete="off">
+                        </span>
+                        can hold 50,000 people.
+                    </p>
+                    <p>
+                        It is a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">9. 傳統</span>
+                            <input type="text" id="q9" class="input-box" autocomplete="off">
+                        </span>
+                        to eat mooncakes during the festival.
+                    </p>
+                    <p>
+                        The teacher&#39;s
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">10. 介入</span>
+                            <input type="text" id="q10" class="input-box" autocomplete="off">
+                        </span>
+                        stopped the fight.
+                    </p>
+                    <p>
+                        Don&#39;t
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">11. 干涉</span>
+                            <input type="text" id="q11" class="input-box" autocomplete="off">
+                        </span>
+                        in other people&#39;s business.
+                    </p>
+                    <p>
+                        He was fined for
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">12. 違反</span>
+                            <input type="text" id="q12" class="input-box" autocomplete="off">
+                        </span>
+                        of the rules.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+<button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <!-- 第三部分：魔王加分題 -->
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由不同字首組成的相關單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('tradition')">
+                        <p class="font-bold text-orange-600">tradition</p>
+                        <p class="text-xs text-gray-500">傳統</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('intervention')">
+                        <p class="font-bold text-orange-600">intervention</p>
+                        <p class="text-xs text-gray-500">介入</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('breach')">
+                        <p class="font-bold text-orange-600">breach</p>
+                        <p class="text-xs text-gray-500">違反</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('interfere')">
+                        <p class="font-bold text-orange-600">interfere</p>
+                        <p class="text-xs text-gray-500">干涉</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript 功能腳本 -->
+    <script>
+        // --- 1. 發音功能 (Web Speech API) ---
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US'; 
+                msg.rate = 0.9;     
+                
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        // --- 2. 測驗答案區 ---
+        const answers = {
+            q1: "convene",
+            q2: "convention",
+            q3: "conventional",
+            q4: "intervene",
+            q5: "contravene",
+            q6: "revenue",
+            q7: "avenue",
+            q8: "venue",
+            q9: "tradition",
+            q10: "intervention",
+            q11: "interfere",
+            q12: "contravention"
+        };
+
+        // --- 3. 檢查答案功能 ---
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase(); 
+                
+                inputElement.classList.remove('correct', 'incorrect');
+
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        // --- 4. 顯示正確答案功能 ---
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        // --- 5. 清除重寫功能 ---
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        // --- 6. 字根高亮功能 ---
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['ven']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元01：【腳】-ped- / -pod-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8; /* 增加整體行距，讓版面看起來更舒服 */
+        }
+        /* 發音點擊的視覺回饋 */
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+        
+        /* 輸入框樣式 */
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        
+        /* 填空題複合結構：上方提示，下方輸入框 */
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem; /* 微調與下一行的距離 */
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        
+        <!-- 標題區 -->
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元一：【腳】 -ped- / -pod-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=jvoBwyKKbAU" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+            <div class="p-6 md:p-8">
+            
+            <!-- 第一部分：核心單字 -->
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('peddle')">
+                            <span class="text-2xl font-bold text-blue-700">peddle</span>
+                            <span class="text-gray-500 ml-2">(v.) 兜售、叫賣</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The man is peddling toys in the park.')">
+                            <p class="text-gray-700 font-medium">The man is <span class="text-blue-600 font-bold">peddling</span> toys in the park.</p>
+                            <p class="text-gray-500 text-sm mt-1">這個男人正在公園裡兜售玩具。</p>
+                        </div>
+                    </div>
+<div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('peddler')">
+                            <span class="text-2xl font-bold text-blue-700">peddler</span>
+                            <span class="text-gray-500 ml-2">(n.) 小販</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('My uncle is a peddler in the night market.')">
+                            <p class="text-gray-700 font-medium">My uncle is a <span class="text-blue-600 font-bold">peddler</span> in the night market.</p>
+                            <p class="text-gray-500 text-sm mt-1">我的叔叔是夜市裡的小販。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('pedal')">
+                            <span class="text-2xl font-bold text-blue-700">pedal</span>
+                            <span class="text-gray-500 ml-2">(n.) 踏板</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Push the pedal to stop the bike.')">
+                            <p class="text-gray-700 font-medium">Push the <span class="text-blue-600 font-bold">pedal</span> to stop the bike.</p>
+                            <p class="text-gray-500 text-sm mt-1">踩下踏板來讓腳踏車停下來。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('pedestrian')">
+                            <span class="text-2xl font-bold text-blue-700">pedestrian</span>
+                            <span class="text-gray-500 ml-2">(n.) 行人</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Drivers must stop for pedestrians.')">
+                            <p class="text-gray-700 font-medium">Drivers must stop for <span class="text-blue-600 font-bold">pedestrians</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">駕駛必須停車讓行人先走。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('impede')">
+                            <span class="text-2xl font-bold text-blue-700">impede</span>
+                            <span class="text-gray-500 ml-2">(v.) 妨礙、阻礙</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The heavy rain impeded our trip.')">
+                            <p class="text-gray-700 font-medium">The heavy rain <span class="text-blue-600 font-bold">impeded</span> our trip.</p>
+                            <p class="text-gray-500 text-sm mt-1">大雨阻礙了我們的旅行。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('impediment')">
+                            <span class="text-2xl font-bold text-blue-700">impediment</span>
+                            <span class="text-gray-500 ml-2">(n.) 絆腳石、障礙</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Fear of speaking is his biggest impediment.')">
+                            <p class="text-gray-700 font-medium">Fear of speaking is his biggest <span class="text-blue-600 font-bold">impediment</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">害怕開口是他最大的障礙。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+<div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('expedition')">
+                            <span class="text-2xl font-bold text-blue-700">expedition</span>
+                            <span class="text-gray-500 ml-2">(n.) 遠征、探險</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('We will go on a jungle expedition next week.')">
+                            <p class="text-gray-700 font-medium">We will go on a jungle <span class="text-blue-600 font-bold">expedition</span> next week.</p>
+                            <p class="text-gray-500 text-sm mt-1">我們下週要去叢林探險。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('expedite')">
+                            <span class="text-2xl font-bold text-blue-700">expedite</span>
+                            <span class="text-gray-500 ml-2">(v.) 加速、加快</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Please expedite the work, we are late!')">
+                            <p class="text-gray-700 font-medium">Please <span class="text-blue-600 font-bold">expedite</span> the work, we are late!</p>
+                            <p class="text-gray-500 text-sm mt-1">請加快工作進度，我們遲到了！</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('centipede')">
+                            <span class="text-2xl font-bold text-blue-700">centipede</span>
+                            <span class="text-gray-500 ml-2">(n.) 蜈蚣</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('I saw a centipede under the rock.')">
+                            <p class="text-gray-700 font-medium">I saw a <span class="text-blue-600 font-bold">centipede</span> under the rock.</p>
+                            <p class="text-gray-500 text-sm mt-1">我在石頭下看到一隻蜈蚣。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('millipede')">
+                            <span class="text-2xl font-bold text-blue-700">millipede</span>
+                            <span class="text-gray-500 ml-2">(n.) 馬陸、千足蟲</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('A millipede has more legs than a centipede.')">
+                            <p class="text-gray-700 font-medium">A <span class="text-blue-600 font-bold">millipede</span> has more legs than a centipede.</p>
+                            <p class="text-gray-500 text-sm mt-1">馬陸的腳比蜈蚣還多。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('pedicure')">
+                            <span class="text-2xl font-bold text-blue-700">pedicure</span>
+                            <span class="text-gray-500 ml-2">(n.) 足部護理</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('My mom goes to the salon for a pedicure.')">
+                            <p class="text-gray-700 font-medium">My mom goes to the salon for a <span class="text-blue-600 font-bold">pedicure</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">我媽媽去美容院做足部護理。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('tripod')">
+<span class="text-2xl font-bold text-blue-700">tripod</span>
+                            <span class="text-gray-500 ml-2">(n.) 三腳架</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Use a tripod to take a good picture.')">
+                            <p class="text-gray-700 font-medium">Use a <span class="text-blue-600 font-bold">tripod</span> to take a good picture.</p>
+                            <p class="text-gray-500 text-sm mt-1">用三腳架來拍出一張好照片。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 第二部分：克漏字測驗 -->
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                
+                <!-- 測驗文本 (逐題條列) -->
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">1. 行人</span>
+                            <input type="text" id="q1" class="input-box" autocomplete="off">
+                        </span>
+                        must look both ways before crossing the street.
+                    </p>
+                    <p>
+                        My uncle is a 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">2. 小販</span>
+                            <input type="text" id="q2" class="input-box" autocomplete="off">
+                        </span>
+                        in the night market.
+                    </p>
+                    <p>
+                        The man tried to 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">3. 兜售</span>
+                            <input type="text" id="q3" class="input-box" autocomplete="off">
+                        </span>
+                        toys to the children.
+                    </p>
+                    <p>
+                        I saw a 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">4. 蜈蚣</span>
+                            <input type="text" id="q4" class="input-box" autocomplete="off">
+                        </span>
+                        crawling under the rock.
+                    </p>
+                    <p>
+                        Use a 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">5. 三腳架</span>
+                            <input type="text" id="q5" class="input-box" autocomplete="off">
+                        </span>
+                        to take stable photos.
+                    </p>
+                    <p>
+                        Push the 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">6. 踏板</span>
+                            <input type="text" id="q6" class="input-box" autocomplete="off">
+                        </span>
+                        to make the bike move.
+                    </p>
+                    <p>
+                        The heavy rain will 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">7. 阻礙</span>
+                            <input type="text" id="q7" class="input-box" autocomplete="off">
+                        </span>
+                        our trip.
+                    </p>
+                    <p>
+                        The team went on an 
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">8. 探險</span>
+                            <input type="text" id="q8" class="input-box" autocomplete="off">
+                        </span>
+                        to the jungle.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+<button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <!-- 第三部分：魔王加分題 -->
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由不同字首組成的相關單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('manicure')">
+                        <p class="font-bold text-orange-600">manicure</p>
+                        <p class="text-xs text-gray-500">手部護理</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('passerby')">
+                        <p class="font-bold text-orange-600">passerby</p>
+                        <p class="text-xs text-gray-500">路人</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('century')">
+                        <p class="font-bold text-orange-600">century</p>
+                        <p class="text-xs text-gray-500">世紀(百年)</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('triangle')">
+                        <p class="font-bold text-orange-600">triangle</p>
+                        <p class="text-xs text-gray-500">三角形</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript 功能腳本 -->
+    <script>
+        // --- 1. 發音功能 (Web Speech API) ---
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US'; 
+                msg.rate = 0.9;     
+                
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        // --- 2. 測驗答案區 ---
+        const answers = {
+            q1: "pedestrian",
+            q2: "peddler",
+            q3: "peddle",
+            q4: "centipede",
+            q5: "tripod",
+            q6: "pedal",
+            q7: "impede",
+            q8: "expedition"
+        };
+
+        // --- 3. 檢查答案功能 ---
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase(); 
+                
+                inputElement.classList.remove('correct', 'incorrect');
+
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        // --- 4. 顯示正確答案功能 ---
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        // --- 5. 清除重寫功能 ---
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        // --- 6. 字根高亮功能 ---
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['ped', 'pod']);
+    </script>
+</body>
+</html>

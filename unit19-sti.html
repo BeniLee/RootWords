@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元19：【站】-sti-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        
+        <!-- 標題區 -->
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元十九：【站】 -sti-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=CFfsr0KH4wI" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+            <div class="p-6 md:p-8">
+            
+            <!-- 第一部分：核心單字 -->
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('constitute')">
+                            <span class="text-2xl font-bold text-blue-700">constitute</span>
+                            <span class="text-gray-500 ml-2">(v.) 構成</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Seven days constitute a week.')">
+                            <p class="text-gray-700 font-medium">Seven days <span class="text-blue-600 font-bold">constitute</span> a week.</p>
+                            <p class="text-gray-500 text-sm mt-1">「七天構成一週。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('constitution')">
+                            <span class="text-2xl font-bold text-blue-700">constitution</span>
+                            <span class="text-gray-500 ml-2">(n.) 憲法</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The constitution protects our rights.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">constitution</span> protects our rights.</p>
+                            <p class="text-gray-500 text-sm mt-1">「憲法保護我們的權利。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('constitutional')">
+                            <span class="text-2xl font-bold text-blue-700">constitutional</span>
+                            <span class="text-gray-500 ml-2">(adj.) 憲法的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Freedom of speech is a constitutional right.')">
+                            <p class="text-gray-700 font-medium">Freedom of speech is a <span class="text-blue-600 font-bold">constitutional</span> right.</p>
+                            <p class="text-gray-500 text-sm mt-1">「言論自由是憲法賦予的權利。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('unconstitutional')">
+                            <span class="text-2xl font-bold text-blue-700">unconstitutional</span>
+                            <span class="text-gray-500 ml-2">(adj.) 違憲的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The court ruled the law unconstitutional.')">
+                            <p class="text-gray-700 font-medium">The court ruled the law <span class="text-blue-600 font-bold">unconstitutional</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">「法院判定該法律違憲。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('prostitute')">
+                            <span class="text-2xl font-bold text-blue-700">prostitute</span>
+                            <span class="text-gray-500 ml-2">(n.) 妓女</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She was forced to work as a prostitute.')">
+                            <p class="text-gray-700 font-medium">She was forced to work as a <span class="text-blue-600 font-bold">prostitute</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">「她被迫以賣淫為生。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('destitute')">
+                            <span class="text-2xl font-bold text-blue-700">destitute</span>
+                            <span class="text-gray-500 ml-2">(adj.) 貧困的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The destitute family had no money for food.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">destitute</span> family had no money for food.</p>
+                            <p class="text-gray-500 text-sm mt-1">「這個貧困的家庭沒錢買食物。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('substitute')">
+                            <span class="text-2xl font-bold text-blue-700">substitute</span>
+                            <span class="text-gray-500 ml-2">(n./v.) 替代品；替代</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Use honey as a substitute for sugar.')">
+                            <p class="text-gray-700 font-medium">Use honey as a <span class="text-blue-600 font-bold">substitute</span> for sugar.</p>
+                            <p class="text-gray-500 text-sm mt-1">「用蜂蜜代替糖。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('constituent')">
+                            <span class="text-2xl font-bold text-blue-700">constituent</span>
+                            <span class="text-gray-500 ml-2">(n.) 選民</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The senator met with his constituents.')">
+                            <p class="text-gray-700 font-medium">The senator met with his <span class="text-blue-600 font-bold">constituents</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">「參議員會見了他的選民。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('consist of')">
+                            <span class="text-2xl font-bold text-blue-700">consist of</span>
+                            <span class="text-gray-500 ml-2">(phr.) 由…組成</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Water consists of hydrogen and oxygen.')">
+                            <p class="text-gray-700 font-medium">Water <span class="text-blue-600 font-bold">consists of</span> hydrogen and oxygen.</p>
+                            <p class="text-gray-500 text-sm mt-1">「水由氫和氧組成。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('compose')">
+                            <span class="text-2xl font-bold text-blue-700">compose</span>
+                            <span class="text-gray-500 ml-2">(v.) 組成</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The committee is composed of ten members.')">
+                            <p class="text-gray-700 font-medium">The committee is <span class="text-blue-600 font-bold">composed</span> of ten members.</p>
+                            <p class="text-gray-500 text-sm mt-1">「委員會由十名成員組成。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('constituency')">
+                            <span class="text-2xl font-bold text-blue-700">constituency</span>
+                            <span class="text-gray-500 ml-2">(n.) 選區</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The MP serves her constituency well.')">
+                            <p class="text-gray-700 font-medium">The MP serves her <span class="text-blue-600 font-bold">constituency</span> well.</p>
+                            <p class="text-gray-500 text-sm mt-1">「這位議員為她的選區盡心服務。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('replacement')">
+                            <span class="text-2xl font-bold text-blue-700">replacement</span>
+                            <span class="text-gray-500 ml-2">(n.) 代替</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('He found a replacement for the broken part.')">
+                            <p class="text-gray-700 font-medium">He found a <span class="text-blue-600 font-bold">replacement</span> for the broken part.</p>
+                            <p class="text-gray-500 text-sm mt-1">「他找到了破損零件的替代品。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('replace')">
+                            <span class="text-2xl font-bold text-blue-700">replace</span>
+                            <span class="text-gray-500 ml-2">(v.) 取代</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Robots will replace some workers.')">
+                            <p class="text-gray-700 font-medium">Robots will <span class="text-blue-600 font-bold">replace</span> some workers.</p>
+                            <p class="text-gray-500 text-sm mt-1">「機器人將取代一些工人。」</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('substitution')">
+                            <span class="text-2xl font-bold text-blue-700">substitution</span>
+                            <span class="text-gray-500 ml-2">(n.) 替代</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The coach made a substitution in the game.')">
+                            <p class="text-gray-700 font-medium">The coach made a <span class="text-blue-600 font-bold">substitution</span> in the game.</p>
+                            <p class="text-gray-500 text-sm mt-1">「教練在比賽中進行了換人。」</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 第二部分：克漏字測驗 -->
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>
+                        Seven days
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">1. 構成</span>
+                            <input type="text" id="q1" class="input-box" autocomplete="off">
+                        </span>
+                        a week.
+                    </p>
+                    <p>
+                        The
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">2. 憲法</span>
+                            <input type="text" id="q2" class="input-box" autocomplete="off">
+                        </span>
+                        protects our rights.
+                    </p>
+                    <p>
+                        Freedom of speech is a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">3. 憲法的</span>
+                            <input type="text" id="q3" class="input-box" autocomplete="off">
+                        </span>
+                        right.
+                    </p>
+                    <p>
+                        The court ruled the law
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">4. 違憲的</span>
+                            <input type="text" id="q4" class="input-box" autocomplete="off">
+                        </span>
+                        .
+                    </p>
+                    <p>
+                        She was forced to work as a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">5. 妓女</span>
+                            <input type="text" id="q5" class="input-box" autocomplete="off">
+                        </span>
+                        .
+                    </p>
+                    <p>
+                        The
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">6. 貧困的</span>
+                            <input type="text" id="q6" class="input-box" autocomplete="off">
+                        </span>
+                        family had no money.
+                    </p>
+                    <p>
+                        Use honey as a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">7. 替代品</span>
+                            <input type="text" id="q7" class="input-box" autocomplete="off">
+                        </span>
+                        for sugar.
+                    </p>
+                    <p>
+                        The senator met with his
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">8. 選民</span>
+                            <input type="text" id="q8" class="input-box" autocomplete="off">
+                        </span>
+                        .
+                    </p>
+                    <p>
+                        Water
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">9. 由…組成</span>
+                            <input type="text" id="q9" class="input-box" autocomplete="off">
+                        </span>
+                        of hydrogen and oxygen.
+                    </p>
+                    <p>
+                        The MP serves her
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">10. 選區</span>
+                            <input type="text" id="q10" class="input-box" autocomplete="off">
+                        </span>
+                        well.
+                    </p>
+                    <p>
+                        He found a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">11. 替代品</span>
+                            <input type="text" id="q11" class="input-box" autocomplete="off">
+                        </span>
+                        for the broken part.
+                    </p>
+                    <p>
+                        The coach made a
+                        <span class="blank-wrapper">
+                            <span class="blank-hint">12. 替換</span>
+                            <input type="text" id="q12" class="input-box" autocomplete="off">
+                        </span>
+                        during the game.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <!-- 第三部分：魔王加分題 -->
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由不同字首組成的相關單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('constituency')">
+                        <p class="font-bold text-orange-600">constituency</p>
+                        <p class="text-xs text-gray-500">選區</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('replacement')">
+                        <p class="font-bold text-orange-600">replacement</p>
+                        <p class="text-xs text-gray-500">代替</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('substitution')">
+                        <p class="font-bold text-orange-600">substitution</p>
+                        <p class="text-xs text-gray-500">替代</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('compose')">
+                        <p class="font-bold text-orange-600">compose</p>
+                        <p class="text-xs text-gray-500">組成</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript 功能腳本 -->
+    <script>
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US';
+                msg.rate = 0.9;
+                
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        const answers = {
+            q1: "constitute",
+            q2: "constitution",
+            q3: "constitutional",
+            q4: "unconstitutional",
+            q5: "prostitute",
+            q6: "destitute",
+            q7: "substitute",
+            q8: "constituent",
+            q9: "consists",
+            q10: "constituency",
+            q11: "replacement",
+            q12: "substitution"
+        };
+
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase();
+                
+                inputElement.classList.remove('correct', 'incorrect');
+
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['sti']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元06：【寫】-scribe- / -script-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元06：【寫】-scribe- / -script-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=NP5YkaOjS98" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+
+        <div class="p-6 md:p-8">
+
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('describe')">
+                            <span class="text-2xl font-bold text-blue-700">describe</span>
+                            <span class="text-gray-500 ml-2">(v.) 描述</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Can you describe what you saw?')">
+                            <p class="text-gray-700 font-medium">Can you <span class="text-blue-600 font-bold">describe</span> what you saw?</p>
+                            <p class="text-gray-500 text-sm mt-1">你能描述你看到了什麼嗎？</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('description')">
+                            <span class="text-2xl font-bold text-blue-700">description</span>
+                            <span class="text-gray-500 ml-2">(n.) 描述</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Her description was very detailed.')">
+                            <p class="text-gray-700 font-medium">Her <span class="text-blue-600 font-bold">description</span> was very detailed.</p>
+                            <p class="text-gray-500 text-sm mt-1">她的描述非常詳細。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('prescribe')">
+                            <span class="text-2xl font-bold text-blue-700">prescribe</span>
+                            <span class="text-gray-500 ml-2">(v.) 開藥方；規定</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The doctor will prescribe some medicine.')">
+                            <p class="text-gray-700 font-medium">The doctor will <span class="text-blue-600 font-bold">prescribe</span> some medicine.</p>
+                            <p class="text-gray-500 text-sm mt-1">醫生會開一些藥。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('prescription')">
+                            <span class="text-2xl font-bold text-blue-700">prescription</span>
+                            <span class="text-gray-500 ml-2">(n.) 藥方；處方</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Take this prescription to the pharmacy.')">
+                            <p class="text-gray-700 font-medium">Take this <span class="text-blue-600 font-bold">prescription</span> to the pharmacy.</p>
+                            <p class="text-gray-500 text-sm mt-1">把這張處方籤拿到藥局。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('subscribe')">
+                            <span class="text-2xl font-bold text-blue-700">subscribe</span>
+                            <span class="text-gray-500 ml-2">(v.) 訂閱；贊助</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('I subscribe to that magazine.')">
+                            <p class="text-gray-700 font-medium">I <span class="text-blue-600 font-bold">subscribe</span> to that magazine.</p>
+                            <p class="text-gray-500 text-sm mt-1">我訂閱那本雜誌。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('subscription')">
+                            <span class="text-2xl font-bold text-blue-700">subscription</span>
+                            <span class="text-gray-500 ml-2">(n.) 訂閱</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('My subscription expires next month.')">
+                            <p class="text-gray-700 font-medium">My <span class="text-blue-600 font-bold">subscription</span> expires next month.</p>
+                            <p class="text-gray-500 text-sm mt-1">我的訂閱下個月到期。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('transcribe')">
+                            <span class="text-2xl font-bold text-blue-700">transcribe</span>
+                            <span class="text-gray-500 ml-2">(v.) 抄寫；轉錄</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Please transcribe the recording.')">
+                            <p class="text-gray-700 font-medium">Please <span class="text-blue-600 font-bold">transcribe</span> the recording.</p>
+                            <p class="text-gray-500 text-sm mt-1">請抄寫這段錄音。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('transcript')">
+                            <span class="text-2xl font-bold text-blue-700">transcript</span>
+                            <span class="text-gray-500 ml-2">(n.) 抄本；成績單</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('I need a transcript of my grades.')">
+                            <p class="text-gray-700 font-medium">I need a <span class="text-blue-600 font-bold">transcript</span> of my grades.</p>
+                            <p class="text-gray-500 text-sm mt-1">我需要一份成績單。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('script')">
+                            <span class="text-2xl font-bold text-blue-700">script</span>
+                            <span class="text-gray-500 ml-2">(n.) 腳本；劇本</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The actor studied his script.')">
+                            <p class="text-gray-700 font-medium">The actor studied his <span class="text-blue-600 font-bold">script</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">演員研讀了他的劇本。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manuscript')">
+                            <span class="text-2xl font-bold text-blue-700">manuscript</span>
+                            <span class="text-gray-500 ml-2">(n.) 手稿</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She sent her manuscript to the publisher.')">
+                            <p class="text-gray-700 font-medium">She sent her <span class="text-blue-600 font-bold">manuscript</span> to the publisher.</p>
+                            <p class="text-gray-500 text-sm mt-1">她把她的手稿寄給了出版社。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('postscript')">
+                            <span class="text-2xl font-bold text-blue-700">postscript</span>
+                            <span class="text-gray-500 ml-2">(n.) 附言</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She added a postscript at the end.')">
+                            <p class="text-gray-700 font-medium">She added a <span class="text-blue-600 font-bold">postscript</span> at the end.</p>
+                            <p class="text-gray-500 text-sm mt-1">她在結尾加了一段附言。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('circumscribe')">
+                            <span class="text-2xl font-bold text-blue-700">circumscribe</span>
+                            <span class="text-gray-500 ml-2">(v.) 限制；劃界線</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The rules circumscribe our actions.')">
+                            <p class="text-gray-700 font-medium">The rules <span class="text-blue-600 font-bold">circumscribe</span> our actions.</p>
+                            <p class="text-gray-500 text-sm mt-1">規則限制了我們的行動。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('inscribe')">
+                            <span class="text-2xl font-bold text-blue-700">inscribe</span>
+                            <span class="text-gray-500 ml-2">(v.) 銘刻</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The ring is inscribed with her name.')">
+                            <p class="text-gray-700 font-medium">The ring is <span class="text-blue-600 font-bold">inscribe</span>d with her name.</p>
+                            <p class="text-gray-500 text-sm mt-1">戒指上刻有她的名字。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('inscription')">
+                            <span class="text-2xl font-bold text-blue-700">inscription</span>
+                            <span class="text-gray-500 ml-2">(n.) 銘文；題字</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The inscription is hard to read.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">inscription</span> is hard to read.</p>
+                            <p class="text-gray-500 text-sm mt-1">這段題字很難辨認。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('scribble')">
+                            <span class="text-2xl font-bold text-blue-700">scribble</span>
+                            <span class="text-gray-500 ml-2">(v./n.) 潦草書寫</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Don't scribble on your paper.')">
+                            <p class="text-gray-700 font-medium">Don't <span class="text-blue-600 font-bold">scribble</span> on your paper.</p>
+                            <p class="text-gray-500 text-sm mt-1">不要在紙上亂寫。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>Can you <span class="blank-wrapper">
+                        <span class="blank-hint">1. 描述</span>
+                        <input type="text" id="q1" class="input-box" autocomplete="off">
+                    </span> what you saw?</p>
+                    <p>The doctor will <span class="blank-wrapper">
+                        <span class="blank-hint">2. 開藥方</span>
+                        <input type="text" id="q2" class="input-box" autocomplete="off">
+                    </span> some medicine.</p>
+                    <p>I <span class="blank-wrapper">
+                        <span class="blank-hint">3. 訂閱</span>
+                        <input type="text" id="q3" class="input-box" autocomplete="off">
+                    </span> to that magazine.</p>
+                    <p>Please <span class="blank-wrapper">
+                        <span class="blank-hint">4. 抄寫</span>
+                        <input type="text" id="q4" class="input-box" autocomplete="off">
+                    </span> the notes into your notebook.</p>
+                    <p>The actor read the <span class="blank-wrapper">
+                        <span class="blank-hint">5. 劇本</span>
+                        <input type="text" id="q5" class="input-box" autocomplete="off">
+                    </span> carefully.</p>
+                    <p>The <span class="blank-wrapper">
+                        <span class="blank-hint">6. 銘文</span>
+                        <input type="text" id="q6" class="input-box" autocomplete="off">
+                    </span> on the ring was beautiful.</p>
+                    <p>The child likes to <span class="blank-wrapper">
+                        <span class="blank-hint">7. 亂寫</span>
+                        <input type="text" id="q7" class="input-box" autocomplete="off">
+                    </span> on the wall.</p>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由相同字根組成的延伸單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                        <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('subscribe to')">
+                        <p class="font-bold text-orange-600">subscribe to</p>
+                        <p class="text-xs text-gray-500">訂閱</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('description')">
+                        <p class="font-bold text-orange-600">description</p>
+                        <p class="text-xs text-gray-500">描述</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('prescription')">
+                        <p class="font-bold text-orange-600">prescription</p>
+                        <p class="text-xs text-gray-500">處方籤</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('scribbler')">
+                        <p class="font-bold text-orange-600">scribbler</p>
+                        <p class="text-xs text-gray-500">無名作家</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US';
+                msg.rate = 0.9;
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        const answers = {
+                        "q1": "describe",
+                        "q2": "prescribe",
+                        "q3": "subscribe",
+                        "q4": "transcribe",
+                        "q5": "script",
+                        "q6": "inscription",
+                        "q7": "scribble"
+        };
+
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase();
+                inputElement.classList.remove('correct', 'incorrect');
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['scrib', 'script']);
+    </script>
+</body>
+</html>

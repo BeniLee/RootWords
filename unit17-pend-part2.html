@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元17：【懸掛】-pend- (Part 2)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+        
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        
+        <!-- 標題區 -->
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元十七：【懸掛】 -pend- (Part 2)</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=bbydsfZnZgg" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+            <div class="p-6 md:p-8">
+            
+            <!-- 第一部分：核心單字 -->
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('append')">
+                            <span class="text-2xl font-bold text-blue-700">append</span>
+                            <span class="text-gray-500 ml-2">(v.) 附加</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Please append your signature at the end.')">
+                            <p class="text-gray-700 font-medium">Please <span class="text-blue-600 font-bold">append</span> your signature at the end.</p>
+                            <p class="text-gray-500 text-sm mt-1">請在末尾附加你的簽名。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('appendix')">
+                            <span class="text-2xl font-bold text-blue-700">appendix</span>
+                            <span class="text-gray-500 ml-2">(n.) 附錄、盲腸</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The appendix contains extra information.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">appendix</span> contains extra information.</p>
+                            <p class="text-gray-500 text-sm mt-1">附錄包含額外的資訊。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('appendicitis')">
+                            <span class="text-2xl font-bold text-blue-700">appendicitis</span>
+                            <span class="text-gray-500 ml-2">(n.) 闌尾炎</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('He was rushed to the hospital with appendicitis.')">
+                            <p class="text-gray-700 font-medium">He was rushed to the hospital with <span class="text-blue-600 font-bold">appendicitis</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">他因闌尾炎被緊急送醫。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('pension')">
+                            <span class="text-2xl font-bold text-blue-700">pension</span>
+                            <span class="text-gray-500 ml-2">(n.) 退休金</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('My grandfather lives on his pension.')">
+                            <p class="text-gray-700 font-medium">My grandfather lives on his <span class="text-blue-600 font-bold">pension</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">我的祖父靠退休金生活。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('pensioner')">
+                            <span class="text-2xl font-bold text-blue-700">pensioner</span>
+                            <span class="text-gray-500 ml-2">(n.) 領退休金者</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The park is popular among pensioners.')">
+                            <p class="text-gray-700 font-medium">The park is popular among <span class="text-blue-600 font-bold">pensioners</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">這個公園在領退休金者中很受歡迎。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('compensate')">
+                            <span class="text-2xl font-bold text-blue-700">compensate</span>
+                            <span class="text-gray-500 ml-2">(v.) 補償</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The company will compensate you for the loss.')">
+                            <p class="text-gray-700 font-medium">The company will <span class="text-blue-600 font-bold">compensate</span> you for the loss.</p>
+                            <p class="text-gray-500 text-sm mt-1">公司會補償你的損失。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('compensation')">
+                            <span class="text-2xl font-bold text-blue-700">compensation</span>
+                            <span class="text-gray-500 ml-2">(n.) 補償金</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('He received compensation for his injury.')">
+                            <p class="text-gray-700 font-medium">He received <span class="text-blue-600 font-bold">compensation</span> for his injury.</p>
+                            <p class="text-gray-500 text-sm mt-1">他因受傷獲得了補償金。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('reimburse')">
+                            <span class="text-2xl font-bold text-blue-700">reimburse</span>
+                            <span class="text-gray-500 ml-2">(v.) 報銷</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The company will reimburse your travel expenses.')">
+                            <p class="text-gray-700 font-medium">The company will <span class="text-blue-600 font-bold">reimburse</span> your travel expenses.</p>
+                            <p class="text-gray-500 text-sm mt-1">公司會報銷你的旅費。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('dispense')">
+                            <span class="text-2xl font-bold text-blue-700">dispense</span>
+                            <span class="text-gray-500 ml-2">(v.) 分配、配藥</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The pharmacist dispensed the medicine.')">
+                            <p class="text-gray-700 font-medium">The pharmacist <span class="text-blue-600 font-bold">dispensed</span> the medicine.</p>
+                            <p class="text-gray-500 text-sm mt-1">藥劑師配發了藥物。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('dispensary')">
+                            <span class="text-2xl font-bold text-blue-700">dispensary</span>
+                            <span class="text-gray-500 ml-2">(n.) 藥房</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The hospital has a 24-hour dispensary.')">
+                            <p class="text-gray-700 font-medium">The hospital has a 24-hour <span class="text-blue-600 font-bold">dispensary</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">這家醫院有24小時藥房。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 第二部分：克漏字測驗 -->
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>Please 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">1. 附加</span>
+                        <input type="text" id="q1" class="input-box" autocomplete="off">
+                    </span> 
+                    your signature at the end.</p>
+                    <p>Check the 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">2. 附錄</span>
+                        <input type="text" id="q2" class="input-box" autocomplete="off">
+                    </span> 
+                    for more details.</p>
+                    <p>He will receive a 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">3. 退休金</span>
+                        <input type="text" id="q3" class="input-box" autocomplete="off">
+                    </span> 
+                    after retirement.</p>
+                    <p>The 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">4. 領退休金者</span>
+                        <input type="text" id="q4" class="input-box" autocomplete="off">
+                    </span> 
+                    goes for a walk every morning.</p>
+                    <p>The company will 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">5. 補償</span>
+                        <input type="text" id="q5" class="input-box" autocomplete="off">
+                    </span> 
+                    you for the loss.</p>
+                    <p>She received 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">6. 賠償</span>
+                        <input type="text" id="q6" class="input-box" autocomplete="off">
+                    </span> 
+                    for her injuries.</p>
+                    <p>The company will 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">7. 報銷</span>
+                        <input type="text" id="q7" class="input-box" autocomplete="off">
+                    </span> 
+                    your travel expenses.</p>
+                    <p>The 
+                    <span class="blank-wrapper">
+                        <span class="blank-hint">8. 藥房</span>
+                        <input type="text" id="q8" class="input-box" autocomplete="off">
+                    </span> 
+                    provides free medicine.</p>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <!-- 第三部分：魔王加分題 -->
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由不同字首組成的相關單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('retire')">
+                        <p class="font-bold text-orange-600">retire</p>
+                        <p class="text-xs text-gray-500">退休</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('retirement')">
+                        <p class="font-bold text-orange-600">retirement</p>
+                        <p class="text-xs text-gray-500">退休生活</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('retiree')">
+                        <p class="font-bold text-orange-600">retiree</p>
+                        <p class="text-xs text-gray-500">退休人員</p>
+                    </div>
+                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('dispenser')">
+                        <p class="font-bold text-orange-600">dispenser</p>
+                        <p class="text-xs text-gray-500">自動販賣機/配藥機</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript 功能腳本 -->
+    <script>
+        // --- 1. 發音功能 (Web Speech API) ---
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US'; 
+                msg.rate = 0.9;     
+                
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        // --- 2. 測驗答案區 ---
+        const answers = {
+            q1: "append",
+            q2: "appendix",
+            q3: "pension",
+            q4: "pensioner",
+            q5: "compensate",
+            q6: "compensation",
+            q7: "reimburse",
+            q8: "dispensary"
+        };
+
+        // --- 3. 檢查答案功能 ---
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase(); 
+                
+                inputElement.classList.remove('correct', 'incorrect');
+
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        // --- 4. 顯示正確答案功能 ---
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        // --- 5. 清除重寫功能 ---
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        // --- 6. 字根高亮功能 ---
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['pend', 'pens']);
+    </script>
+</body>
+</html>

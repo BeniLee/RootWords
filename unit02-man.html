@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單元02：【手】-man-</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+        .speakable {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .speakable:hover {
+            background-color: #e0f2fe;
+            border-radius: 0.375rem;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .speakable::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .root-highlight {
+            color: #d97706;
+            font-weight: inherit;
+        }
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .speakable:hover::after {
+            opacity: 1;
+        }
+        .input-box {
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            padding: 0.2rem 0.5rem;
+            min-width: 100px;
+            width: 160px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .input-box:focus {
+            border-color: #3b82f6;
+            background-color: #f0f9ff;
+        }
+        .correct {
+            border-color: #10b981 !important;
+            background-color: #d1fae5 !important;
+            color: #065f46;
+        }
+        .incorrect {
+            border-color: #ef4444 !important;
+            background-color: #fee2e2 !important;
+            color: #991b1b;
+        }
+        .blank-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .blank-hint {
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+
+        <div class="bg-blue-600 text-white p-6 text-center">
+            <h1 class="text-3xl font-bold mb-2">英文單字字根學習單</h1>
+            <h2 class="text-xl">單元02：【手】-man-</h2>
+            <p class="mt-2 text-blue-100 text-sm">💡 提示：滑鼠游標移到「英文單字」或「英文例句」上點擊，就可以聽發音喔！</p>
+        </div>
+
+        <div class="mb-4 text-center"><a class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition shadow" href="https://www.youtube.com/watch?v=bpZUIW7y4fY" target="_blank" rel="noopener" title="在 YouTube 觀看此單元影片">▶ 在 YouTube 觀看此單元影片</a></div>
+
+        <div class="p-6 md:p-8">
+
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-6 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 1.</span> 核心單字學習
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manicure')">
+                            <span class="text-2xl font-bold text-blue-700">manicure</span>
+                            <span class="text-gray-500 ml-2">(n.) 手部護理</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('My mom goes to the salon for a manicure.')">
+                            <p class="text-gray-700 font-medium">My mom goes to the salon for a <span class="text-blue-600 font-bold">manicure</span>.</p>
+                            <p class="text-gray-500 text-sm mt-1">我媽媽去美容院做手部護理。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manipulate')">
+                            <span class="text-2xl font-bold text-blue-700">manipulate</span>
+                            <span class="text-gray-500 ml-2">(v.) 操縱；操作</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('He knows how to manipulate the machine.')">
+                            <p class="text-gray-700 font-medium">He knows how to <span class="text-blue-600 font-bold">manipulate</span> the machine.</p>
+                            <p class="text-gray-500 text-sm mt-1">他知道如何操作這臺機器。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manipulation')">
+                            <span class="text-2xl font-bold text-blue-700">manipulation</span>
+                            <span class="text-gray-500 ml-2">(n.) 操縱；操作</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The manipulation of data is not allowed.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">manipulation</span> of data is not allowed.</p>
+                            <p class="text-gray-500 text-sm mt-1">不允許操縱數據。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manual')">
+                            <span class="text-2xl font-bold text-blue-700">manual</span>
+                            <span class="text-gray-500 ml-2">(adj./n.) 手工的；手冊</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('Please read the manual before using it.')">
+                            <p class="text-gray-700 font-medium">Please read the <span class="text-blue-600 font-bold">manual</span> before using it.</p>
+                            <p class="text-gray-500 text-sm mt-1">使用前請閱讀手冊。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manufacture')">
+                            <span class="text-2xl font-bold text-blue-700">manufacture</span>
+                            <span class="text-gray-500 ml-2">(v.) 製造</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('This factory can manufacture cars.')">
+                            <p class="text-gray-700 font-medium">This factory can <span class="text-blue-600 font-bold">manufacture</span> cars.</p>
+                            <p class="text-gray-500 text-sm mt-1">這家工廠可以製造汽車。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manufacturing')">
+                            <span class="text-2xl font-bold text-blue-700">manufacturing</span>
+                            <span class="text-gray-500 ml-2">(adj./n.) 製造業的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The manufacturing industry is growing.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">manufacturing</span> industry is growing.</p>
+                            <p class="text-gray-500 text-sm mt-1">製造業正在增長。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manufacturer')">
+                            <span class="text-2xl font-bold text-blue-700">manufacturer</span>
+                            <span class="text-gray-500 ml-2">(n.) 製造商</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The manufacturer recalled the product.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">manufacturer</span> recalled the product.</p>
+                            <p class="text-gray-500 text-sm mt-1">製造商召回了產品。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('automate')">
+                            <span class="text-2xl font-bold text-blue-700">automate</span>
+                            <span class="text-gray-500 ml-2">(v.) 使自動化</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('We should automate this process.')">
+                            <p class="text-gray-700 font-medium">We should <span class="text-blue-600 font-bold">automate</span> this process.</p>
+                            <p class="text-gray-500 text-sm mt-1">我們應該讓這個過程自動化。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('automated')">
+                            <span class="text-2xl font-bold text-blue-700">automated</span>
+                            <span class="text-gray-500 ml-2">(adj.) 自動化的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The automated system works well.')">
+                            <p class="text-gray-700 font-medium">The <span class="text-blue-600 font-bold">automated</span> system works well.</p>
+                            <p class="text-gray-500 text-sm mt-1">自動化系統運作良好。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('automatic')">
+                            <span class="text-2xl font-bold text-blue-700">automatic</span>
+                            <span class="text-gray-500 ml-2">(adj.) 自動的</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('The door has an automatic sensor.')">
+                            <p class="text-gray-700 font-medium">The door has an <span class="text-blue-600 font-bold">automatic</span> sensor.</p>
+                            <p class="text-gray-500 text-sm mt-1">這扇門有自動感應器。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('manuscript')">
+                            <span class="text-2xl font-bold text-blue-700">manuscript</span>
+                            <span class="text-gray-500 ml-2">(n.) 手稿</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She sent her manuscript to the publisher.')">
+                            <p class="text-gray-700 font-medium">She sent her <span class="text-blue-600 font-bold">manuscript</span> to the publisher.</p>
+                            <p class="text-gray-500 text-sm mt-1">她把她的手稿寄給了出版社。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('transcript')">
+                            <span class="text-2xl font-bold text-blue-700">transcript</span>
+                            <span class="text-gray-500 ml-2">(n.) 抄本；成績單</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('I need a transcript of my grades.')">
+                            <p class="text-gray-700 font-medium">I need a <span class="text-blue-600 font-bold">transcript</span> of my grades.</p>
+                            <p class="text-gray-500 text-sm mt-1">我需要一份成績單。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                        <div class="speakable p-2 -mx-2 -mt-2 mb-2" onclick="speak('postscript')">
+                            <span class="text-2xl font-bold text-blue-700">postscript</span>
+                            <span class="text-gray-500 ml-2">(n.) 附言；後記</span>
+                        </div>
+                        <div class="speakable p-2 -mx-2" onclick="speak('She added a postscript at the end.')">
+                            <p class="text-gray-700 font-medium">She added a <span class="text-blue-600 font-bold">postscript</span> at the end.</p>
+                            <p class="text-gray-500 text-sm mt-1">她在結尾加了一段附言。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12 bg-blue-50 p-6 md:p-8 rounded-xl border border-blue-100">
+                <h3 class="text-2xl font-semibold border-b-2 border-blue-200 pb-2 mb-4 flex items-center">
+                    <span class="text-blue-600 mr-2">Part 2.</span> 克漏字挑戰
+                </h3>
+                <p class="mb-6 text-gray-700 font-medium">請根據句子空格上方的「中文提示」填寫適當的字根單字，完成句子。</p>
+                <div class="space-y-6 text-xl leading-[3rem] text-gray-800 bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p>I went to the salon for a <span class="blank-wrapper">
+                        <span class="blank-hint">1. 手部護理</span>
+                        <input type="text" id="q1" class="input-box" autocomplete="off">
+                    </span>.</p>
+                    <p>The politician tried to <span class="blank-wrapper">
+                        <span class="blank-hint">2. 操縱</span>
+                        <input type="text" id="q2" class="input-box" autocomplete="off">
+                    </span> the voters.</p>
+                    <p>Please read the <span class="blank-wrapper">
+                        <span class="blank-hint">3. 手冊</span>
+                        <input type="text" id="q3" class="input-box" autocomplete="off">
+                    </span> before using the machine.</p>
+                    <p>The factory has an <span class="blank-wrapper">
+                        <span class="blank-hint">4. 自動化的</span>
+                        <input type="text" id="q4" class="input-box" autocomplete="off">
+                    </span> assembly line.</p>
+                    <p>The company will <span class="blank-wrapper">
+                        <span class="blank-hint">5. 製造</span>
+                        <input type="text" id="q5" class="input-box" autocomplete="off">
+                    </span> cars in this factory.</p>
+                    <p>The author's original <span class="blank-wrapper">
+                        <span class="blank-hint">6. 手稿</span>
+                        <input type="text" id="q6" class="input-box" autocomplete="off">
+                    </span> was lost.</p>
+                    <p>She added a <span class="blank-wrapper">
+                        <span class="blank-hint">7. 附註</span>
+                        <input type="text" id="q7" class="input-box" autocomplete="off">
+                    </span> at the end of the letter.</p>
+                    <p>The school will send your <span class="blank-wrapper">
+                        <span class="blank-hint">8. 成績單</span>
+                        <input type="text" id="q8" class="input-box" autocomplete="off">
+                    </span> by mail.</p>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="checkAnswers()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow">檢查答案</button>
+                    <button onclick="showAnswers()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg transition border border-gray-300">顯示答案</button>
+                    <button onclick="clearAnswers()" class="bg-white hover:bg-gray-50 text-gray-500 font-bold py-2 px-6 rounded-lg transition border border-gray-200">清除重寫</button>
+                </div>
+                <div id="result-msg" class="mt-4 font-bold text-lg hidden"></div>
+            </section>
+
+            <section class="mt-12 bg-orange-50 p-6 rounded-xl border border-orange-200">
+                <h3 class="text-xl font-semibold border-b-2 border-orange-200 pb-2 mb-4 flex items-center text-orange-700">
+                    👑 魔王加分題 (Bonus Words)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">影片中還有提到由相同字根組成的延伸單字，你記得幾個呢？點擊發音複習一下吧！</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                        <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('maneuver')">
+                        <p class="font-bold text-orange-600">maneuver</p>
+                        <p class="text-xs text-gray-500">演習；操縱</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('manually')">
+                        <p class="font-bold text-orange-600">manually</p>
+                        <p class="text-xs text-gray-500">手動地</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('automation')">
+                        <p class="font-bold text-orange-600">automation</p>
+                        <p class="text-xs text-gray-500">自動化</p>
+                    </div>                    <div class="speakable bg-white p-3 rounded shadow-sm border border-orange-100" onclick="speak('emancipate')">
+                        <p class="font-bold text-orange-600">emancipate</p>
+                        <p class="text-xs text-gray-500">解放</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = text;
+                msg.lang = 'en-US';
+                msg.rate = 0.9;
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("很抱歉，您的瀏覽器不支援語音發音功能。");
+            }
+        }
+
+        const answers = {
+                        "q1": "manicure",
+                        "q2": "manipulate",
+                        "q3": "manual",
+                        "q4": "automated",
+                        "q5": "manufacture",
+                        "q6": "manuscript",
+                        "q7": "postscript",
+                        "q8": "transcript"
+        };
+
+        function checkAnswers() {
+            let correctCount = 0;
+            const totalQuestions = Object.keys(answers).length;
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                const userAnswer = inputElement.value.trim().toLowerCase();
+                inputElement.classList.remove('correct', 'incorrect');
+                if (userAnswer === answers[id]) {
+                    inputElement.classList.add('correct');
+                    correctCount++;
+                } else {
+                    if (userAnswer !== "") {
+                        inputElement.classList.add('incorrect');
+                    }
+                }
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            if (correctCount === totalQuestions) {
+                resultMsg.innerText = "🎉 太棒了！全部答對！";
+                resultMsg.classList.add('text-green-600');
+            } else {
+                resultMsg.innerText = `💪 你答對了 ${correctCount} / ${totalQuestions} 題，再試試看！(紅色為錯誤)`;
+                resultMsg.classList.add('text-red-600');
+            }
+        }
+
+        function showAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = answers[id];
+                inputElement.classList.remove('incorrect');
+                inputElement.classList.add('correct');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.remove('hidden', 'text-red-600');
+            resultMsg.classList.add('text-green-600');
+            resultMsg.innerText = "✨ 已經為您顯示正確答案。";
+        }
+
+        function clearAnswers() {
+            for (let id in answers) {
+                const inputElement = document.getElementById(id);
+                inputElement.value = "";
+                inputElement.classList.remove('correct', 'incorrect');
+            }
+            const resultMsg = document.getElementById('result-msg');
+            resultMsg.classList.add('hidden');
+        }
+
+        function highlightRoots(roots) {
+            document.querySelectorAll('.text-2xl').forEach(el => {
+                const text = el.textContent;
+                for (const root of roots) {
+                    const idx = text.toLowerCase().indexOf(root);
+                    if (idx !== -1) {
+                        el.innerHTML = text.slice(0, idx) + '<span class="root-highlight">' + text.slice(idx, idx + root.length) + '</span>' + text.slice(idx + root.length);
+                        return;
+                    }
+                }
+            });
+        }
+        highlightRoots(['man']);
+    </script>
+</body>
+</html>
